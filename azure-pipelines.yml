@@ -1,0 +1,12 @@
+steps:
+- task: Docker@2
+  displayName: login
+  inputs:
+    containerRegistry: DockerHub
+    command: login
+
+- task: Docker@2
+  displayName: buildAndPush
+  inputs:
+    containerRegistry: DockerHub
+    repository: ricardo21/testrepo20
