@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|Default">
   <MonoDevelop.Ide.ItemProperties.Supermarket.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Contexts/AppDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Properties/launchSettings.json">
     <Files>
       <File FileName="Domain/Repositories/ICategoryRepository.cs" Line="1" Column="1" />
       <File FileName="Controllers/CategoriesController.cs" />
       <File FileName="Program.cs" Line="1" Column="1" />
-      <File FileName="Startup.cs" Line="87" Column="44" />
+      <File FileName="Startup.cs" Line="77" Column="22" />
       <File FileName="app/appsettings.json" />
       <File FileName="appsettings.json" Line="16" Column="1" />
-      <File FileName="Dockerfile" />
+      <File FileName="Dockerfile" Line="16" Column="1" />
       <File FileName="../../../../../../usr/local/share/dotnet/sdk/3.1.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets" Line="47" Column="127" />
-      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="9" Column="18" />
+      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="23" Column="12" />
+      <File FileName="Properties/launchSettings.json" Line="9" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,9 +28,10 @@
               </Node>
               <Node name="Extensions" expanded="True" />
               <Node name="Persistence" expanded="True">
-                <Node name="Contexts" expanded="True">
-                  <Node name="AppDbContext.cs" selected="True" />
-                </Node>
+                <Node name="Contexts" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True">
+                <Node name="launchSettings.json" selected="True" />
               </Node>
             </Node>
           </Node>
