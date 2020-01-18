@@ -29,6 +29,7 @@ namespace Supermarket.API
 
 
 
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
