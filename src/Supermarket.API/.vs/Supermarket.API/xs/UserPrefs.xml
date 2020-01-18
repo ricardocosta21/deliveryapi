@@ -1,20 +1,23 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|Default">
   <MonoDevelop.Ide.ItemProperties.Supermarket.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Dockerfile">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Contexts/AppDbContext.cs">
     <Files>
       <File FileName="Domain/Repositories/ICategoryRepository.cs" Line="1" Column="1" />
       <File FileName="Controllers/CategoriesController.cs" />
-      <File FileName="Program.cs" />
-      <File FileName="Startup.cs" />
-      <File FileName="app/appsettings.json" Line="9" Column="34" />
-      <File FileName="appsettings.json" Line="14" Column="1" />
-      <File FileName="Dockerfile" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="87" Column="44" />
+      <File FileName="app/appsettings.json" />
+      <File FileName="appsettings.json" Line="16" Column="1" />
+      <File FileName="Dockerfile" />
+      <File FileName="../../../../../../usr/local/share/dotnet/sdk/3.1.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets" Line="47" Column="127" />
+      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="9" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Supermarket.API" expanded="True">
             <Node name="Supermarket.API" expanded="True">
+              <Node name="Dependencies" expanded="True" />
               <Node name="app" expanded="True" />
               <Node name="Controllers" expanded="True" />
               <Node name="Domain" expanded="True">
@@ -23,7 +26,11 @@
                 <Node name="Services" expanded="True" />
               </Node>
               <Node name="Extensions" expanded="True" />
-              <Node name="Dockerfile" selected="True" />
+              <Node name="Persistence" expanded="True">
+                <Node name="Contexts" expanded="True">
+                  <Node name="AppDbContext.cs" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>

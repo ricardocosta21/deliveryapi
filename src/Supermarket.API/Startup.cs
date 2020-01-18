@@ -15,6 +15,8 @@ using Supermarket.API.Persistence.Contexts;
 using Supermarket.API.Persistence.Repositories;
 using Supermarket.API.Services;
 using Swashbuckle.AspNetCore.Swagger;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 
 namespace Supermarket.API
 {
@@ -33,6 +35,13 @@ namespace Supermarket.API
         {
             services.AddMemoryCache();
 
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+
             //services.AddCors(options =>
             //{
             //    options.AddPolicy(MyAllowSpecificOrigins,
@@ -43,54 +52,60 @@ namespace Supermarket.API
             //});
 
             // Add Cors
-            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
-            {
-                builder.AllowAnyOrigin()
-                       .AllowAnyMethod()
-                       .AllowAnyHeader();
-            }));
+            //services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            //{
+            //    builder.AllowAnyOrigin()
+            //           .AllowAnyMethod()
+            //           .AllowAnyHeader();
+            //}));
 
-            services.AddSwaggerGen(cfg =>
-            {
-                cfg.SwaggerDoc("v1", new Info
-                {
-                    Title = "Supermarket API",
-                        Version = "v1.1",
-                        Description = "Simple RESTful API built with ASP.NET Core 2.2 to show how to create RESTful services using a decoupled, maintainable architecture.",
-                        Contact = new Contact
-                        {
-                            Name = "Evandro Gayer Gomes",
-                                Url = "https://github.com/evgomes",
-                        },
-                        License = new License
-                        {
-                            Name = "MIT",
-                        },
-                });
+            //services.AddSwaggerGen(cfg =>
+            //{
+            //    cfg.SwaggerDoc("v1", new Info
+            //    {
+            //        Title = "Supermarket API",
+            //            Version = "v1.1",
+            //            Description = "Simple RESTful API built with ASP.NET Core 2.2 to show how to create RESTful services using a decoupled, maintainable architecture.",
+            //            Contact = new Contact
+            //            {
+            //                Name = "Evandro Gayer Gomes",
+            //                    Url = "https://github.com/evgomes",
+            //            },
+            //            License = new License
+            //            {
+            //                Name = "MIT",
+            //            },
+            //    });
 
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                cfg.IncludeXmlComments(xmlPath);
-            });
+            //    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            //    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+            //    cfg.IncludeXmlComments(xmlPath);
+            //});
 
-            services.AddMvc()
-                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
-                .ConfigureApiBehaviorOptions(options =>
-                {
-                    // Adds a custom error response factory when ModelState is invalid
-                    options.InvalidModelStateResponseFactory = InvalidModelStateResponseFactory.ProduceErrorResponse;
-                });
-            
 
-            services.AddSingleton<IConfiguration>(Configuration);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddDbContext<AppDbContext>(options =>
-            {
-                //options.UseInMemoryDatabase("supermarket-api-in-memory");
-                options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]);
-            });
+                    options.UseSqlite("Data Source=localdatabase.db"));
 
-            
+            //services.AddMvc()
+            //    .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+            //    .ConfigureApiBehaviorOptions(options =>
+            //    {
+            //        // Adds a custom error response factory when ModelState is invalid
+            //        options.InvalidModelStateResponseFactory = InvalidModelStateResponseFactory.ProduceErrorResponse;
+            //    });
+
+
+            //services.AddSingleton<IConfiguration>(Configuration);
+
+            //services.AddDbContext<AppDbContext>(options =>
+            //{
+            //    //options.UseInMemoryDatabase("supermarket-api-in-memory");
+            //    options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]);
+            //});
+
+
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -110,18 +125,11 @@ namespace Supermarket.API
             else
             {
                 app.UseHsts();
-            }
-
-            app.UseSwagger();
-
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Supermarket API");
-            });
+            }           
             
-            app.UseCors("MyPolicy");
-
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseCookiePolicy();
 
             app.UseMvc(routes =>
             {
