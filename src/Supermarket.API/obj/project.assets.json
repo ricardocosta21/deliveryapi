@@ -12645,17 +12645,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ricardocosta/development/supermarketv3/src/Supermarket.API/Supermarket.API.csproj",
+      "projectUniqueName": "/Users/ricardocosta/development/supermarketV4/src/Supermarket.API/Supermarket.API.csproj",
       "projectName": "Supermarket.API",
-      "projectPath": "/Users/ricardocosta/development/supermarketv3/src/Supermarket.API/Supermarket.API.csproj",
+      "projectPath": "/Users/ricardocosta/development/supermarketV4/src/Supermarket.API/Supermarket.API.csproj",
       "packagesPath": "/Users/ricardocosta/.nuget/packages/",
-      "outputPath": "/Users/ricardocosta/development/supermarketv3/src/Supermarket.API/obj/",
+      "outputPath": "/Users/ricardocosta/development/supermarketV4/src/Supermarket.API/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/ricardocosta/.nuget/NuGet/NuGet.Config"
+        "/Users/ricardocosta/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
