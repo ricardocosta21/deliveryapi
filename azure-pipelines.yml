@@ -1,12 +1,37 @@
-steps:
-- task: Docker@2
-  displayName: login
-  inputs:
-    containerRegistry: DockerHub
-    command: login
+﻿trigger:
+- master
 
-- task: Docker@2
-  displayName: buildAndPush
+pool:
+  vmImage: 'Ubuntu-18.04'
+
+variables:
+  imageName: 'ricardo21/testrepo20:$(build.buildNumber)'
+
+steps:
+- script: dotnet test Supermarket.API.Tests/Supermarket.API.Tests.csproj --logger trx
+  displayName: Run unit tests
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
   inputs:
-    containerRegistry: DockerHub
-    repository: ricardo21/testrepo20
+    testRunner: VSTest
+    testResultsFiles: '**/*.trx'
+- task: Docker@1
+  displayName: Build an image
+  inputs:
+    command: Build an image
+    containerregistrytype: Container Registry
+    dockerRegistryEndpoint: DockerHub
+    dockerFile: Dockerfile
+    imageName: $(imageName)
+    imageNamesPath: 
+    restartPolicy: always
+- task: Docker@1
+  displayName: Push an image
+  inputs:
+    command: Push an image
+    containerregistrytype: Container Registry
+    dockerRegistryEndpoint: DockerHub
+    dockerFile: Dockerfile
+    imageName: $(imageName)
+    imageNamesPath: 
+    restartPolicy: always
