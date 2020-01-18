@@ -88,6 +88,9 @@ namespace Supermarket.API
 
 
 
+
+
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddDbContext<AppDbContext>(options =>
