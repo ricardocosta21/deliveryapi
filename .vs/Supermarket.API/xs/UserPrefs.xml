@@ -1,15 +1,22 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|Default">
   <MonoDevelop.Ide.ItemProperties.Supermarket.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Dockerfile">
     <Files>
-      <File FileName="Startup.cs" Line="27" Column="1" />
+      <File FileName="Startup.cs" Line="115" Column="30" />
+      <File FileName="Controllers/CategoriesController.cs" Line="1" Column="1" />
+      <File FileName="Services/CategoryService.cs" Line="1" Column="1" />
+      <File FileName="Domain/Repositories/ICategoryRepository.cs" Line="1" Column="1" />
+      <File FileName="appsettings.json" Line="14" Column="1" />
+      <File FileName="Domain/Models/Category.cs" Line="1" Column="1" />
+      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="12" Column="1" />
+      <File FileName="Dockerfile" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Supermarket.API" expanded="True">
             <Node name="Supermarket.API" expanded="True">
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Dockerfile" selected="True" />
             </Node>
           </Node>
         </State>
