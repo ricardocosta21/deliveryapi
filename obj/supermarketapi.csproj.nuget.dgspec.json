@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ricardocosta/development/supermarketV4/Supermarket.API.csproj": {}
+    "/Users/ricardocosta/development/supermarketV4/supermarketapi.csproj": {}
   },
   "projects": {
-    "/Users/ricardocosta/development/supermarketV4/Supermarket.API.csproj": {
+    "/Users/ricardocosta/development/supermarketV4/supermarketapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ricardocosta/development/supermarketV4/Supermarket.API.csproj",
-        "projectName": "Supermarket.API",
-        "projectPath": "/Users/ricardocosta/development/supermarketV4/Supermarket.API.csproj",
+        "projectUniqueName": "/Users/ricardocosta/development/supermarketV4/supermarketapi.csproj",
+        "projectName": "supermarketapi",
+        "projectPath": "/Users/ricardocosta/development/supermarketV4/supermarketapi.csproj",
         "packagesPath": "/Users/ricardocosta/.nuget/packages/",
         "outputPath": "/Users/ricardocosta/development/supermarketV4/obj/",
         "projectStyle": "PackageReference",

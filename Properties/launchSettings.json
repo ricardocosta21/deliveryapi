@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Supermarket.API": {
+    "supermarketapi": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/categories",

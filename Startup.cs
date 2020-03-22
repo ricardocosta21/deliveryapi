@@ -33,15 +33,6 @@ namespace Supermarket.API
         {
             services.AddMemoryCache();
 
-            //services.AddCors(options =>
-            //{
-            //    options.AddPolicy(MyAllowSpecificOrigins,
-            //    builder =>
-            //    {
-            //        builder.WithOrigins("http://localhost:3000/");
-            //    });
-            //});
-
             // Add Cors
             services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
             {
@@ -121,7 +112,7 @@ namespace Supermarket.API
 
             app.UseCors("MyPolicy");
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseMvc(routes =>
             {

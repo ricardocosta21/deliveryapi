@@ -1,9 +1,8 @@
 
 
-# DevBranch here!!!!!
- v5
+# @ master branch
 
-
+Supermarket api v5 - implementing into a kubernetes cluster
 
 # Supermarket API
 
