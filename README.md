@@ -1,6 +1,6 @@
 
 
-# @ master branch
+# @ version v5
 
 Supermarket api v5 - implementing into a kubernetes cluster
 
