@@ -1,0 +1,55 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supermarketapi
+  labels:
+    app: supermarketapi
+    tier: backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: supermarketapi
+  template:
+    metadata:
+      labels:
+        app: supermarketapi
+    spec:
+      containers:
+      - name: supermarketapi
+        imagePullPolicy: Never
+        image: ricardo21/supermarketapi:v5
+        ports:
+        - containerPort: 80
+
+
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: api
+#   labels:
+#     app: ricardo21/supermarketapi:v5
+#     tier: api
+# spec:
+#   selector:
+#     matchLabels:
+#       tier: frontend
+#   replicas: 3
+#   template:
+#     metadata:
+#       labels:
+#         app: ricardo21/supermarketapi:v5
+#     spec:
+#       containers:
+#       - name: ricardo21/supermarketapi:v5
+#         image: ricardo21/supermarketapi:v5
+#         livenessProbe:
+#           httpGet:
+#             path: /index.html
+#             port: 80
+#           initialDelaySeconds: 15
+#           timeoutSeconds: 2
+#           periodSeconds: 5
+#           failureThreshold: 1
+

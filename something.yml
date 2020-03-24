@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ricardo21/supermarketapi:v5
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: supermarketapi
+  template:
+    metadata:
+      name: ricardo21/supermarketapi:v5
+    spec:
+      containers:
+      - name: ricardo21/supermarketapi:v5
+        imagePullPolicy: Never
+        image: ricardo21/supermarketapi:v5
+        ports:
+        - containerPort: 80
