@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supermarketapi
+  # labels:
+  #   app: supermarketapi
+  #   tier: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: supermarketapi
+  template:
+    metadata:
+      labels:
+        app: supermarketapi
+    spec:
+      containers:
+      - name: supermarketapi
+        image: ricardo21/supermarketapi:v5
+        ports:
+        - containerPort: 80 # the port that the container listens on
+        imagePullPolicy: Always
+

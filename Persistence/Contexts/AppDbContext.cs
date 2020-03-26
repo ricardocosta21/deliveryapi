@@ -21,7 +21,7 @@ namespace Supermarket.API.Persistence.Contexts
         {
             // Database needs to point to mysqlserver container
             //optionsBuilder.UseSqlServer("Server=localhost;Database=master;user id=sa;password=Passw0rd");
-            optionsBuilder.UseSqlServer("Server=192.168.0.27;Database=master;user id=sa;password=Passw0rd");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=master;user id=sa;password=Passw0rd");
             
         }
 
