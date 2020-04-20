@@ -78,7 +78,9 @@ namespace Supermarket.API
             services.AddDbContext<AppDbContext>(options =>
             {
                 //options.UseInMemoryDatabase("supermarket-api-in-memory");
-                options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]);
+
+                //options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]);
+                options.UseMySQL(Configuration["ConnectionStrings:DefaultConnection"]);
             });
 
 

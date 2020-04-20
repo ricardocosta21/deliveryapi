@@ -1,10 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: supermarketapi-service
+  labels:
+    app: supermarketapi
+spec:
+  ports:
+  - port: 8080
+    name: http
+  selector:
+    app: supermarketapi
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: supermarketapi
-  # labels:
-  #   app: supermarketapi
-  #   tier: backend
 spec:
   replicas: 1
   selector:
@@ -20,5 +30,5 @@ spec:
         image: ricardo21/supermarketapi:v5
         ports:
         - containerPort: 80 # the port that the container listens on
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
 

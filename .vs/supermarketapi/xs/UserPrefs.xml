@@ -1,13 +1,16 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Dockerfile">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Dockerfile" Line="21" Column="30" IsPinned="True" />
-      <File FileName="appsettings.json" />
-      <File FileName="Persistence/Contexts/AppDbContext.cs" />
-      <File FileName="Startup.cs" />
-      <File FileName="Controllers/CategoriesController.cs" />
+      <File FileName="Dockerfile" Line="26" Column="77" IsPinned="True" />
+      <File FileName="appsettings.json" Line="12" Column="66" IsPinned="True" />
+      <File FileName="Startup.cs" Line="85" Column="1" />
+      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="12" Column="32" />
+      <File FileName="Controllers/CategoriesController.cs" Line="15" Column="18" />
       <File FileName="Services/CategoryService.cs" />
       <File FileName="Domain/Repositories/ICategoryRepository.cs" />
+      <File FileName="Domain/Models/Category.cs" />
+      <File FileName="Program.cs" Line="19" Column="1" />
+      <File FileName="Properties/launchSettings.json" Line="23" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,12 +22,14 @@
                 <Node name="Models" expanded="True" />
                 <Node name="Repositories" expanded="True" />
               </Node>
+              <Node name="Infrastructure" expanded="True" />
+              <Node name="kube" expanded="True" />
               <Node name="Persistence" expanded="True">
                 <Node name="Contexts" expanded="True" />
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="Dockerfile" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

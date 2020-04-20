@@ -20,4 +20,7 @@ WORKDIR /app
 LABEL Author="Ricardo Costa"
 LABEL Maintainer="testingAPI"
 COPY --from=publish /app .
+
+EXPOSE 5000
+
 ENTRYPOINT ["dotnet", "supermarketapi.dll", "--server.urls", "https://*:80"]
