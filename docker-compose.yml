@@ -1,62 +1,25 @@
-﻿# version: '3'
-
-# services:
-#   db:
-#     image: ricardo21/sql-server:v5
-#     volumes:
-#        - mssqldata:/var/lib/mssqldata
-#     restart: always
-#     networks:
-#       - aspsqlnet
-#     environment:
-#       - sa_password=Passw0rd
-#       - ACCEPT_EULA=Y
-#     ports:
-#     - "1433:1433"
-
-#   mvc:
-#     build:
-#       context: .
-#       dockerfile: Dockerfile
-#     depends_on:
-#       - db
-#     networks:
-#       - aspsqlnet
-#     ports:
-#       - "5000:80"
-#     #restart: always
-#     environment:
-#       - DBHOST=db
-#       - DBNAME=master
-#       - DBPORT=1433
-#       - DBUSERNAME=sa
-#       - DBPASSWORD=Passw0rd
-#       - ASPNETCORE_ENVIRONMENT=Development
-
-# volumes:
-#   mssqldata:
-
-# networks:
-#   aspsqlnet:
-
-    #####
-
-version: '3.4'
-
+﻿version: '3'
 services:
-  supermarketapi:
+  db:
+    image: mysql
+    volumes:
+       - datafiles:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Passw0rd
+
+  mvc:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-    - "5001:80"
     depends_on:
-    - db
-  db:
-    image: "ricardo21/sql-server:v5"
-    environment:
-      sa_password: "Passw0rd"
-      ACCEPT_EULA: "Y"
+      - db
     ports:
-    - "1445:1433"
- 
+      - "8888:80"
+    restart: always
+    environment:
+      - DBHOST=db
+      - ASPNETCORE_ENVIRONMENT=Development
+
+volumes:
+  datafiles:

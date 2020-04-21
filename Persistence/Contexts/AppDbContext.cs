@@ -26,7 +26,14 @@ namespace Supermarket.API.Persistence.Contexts
             //optionsBuilder.UseSqlServer("Server=localhost;Database=master;user id=sa;password=Passw0rd");
             //optionsBuilder.UseSqlServer("Server=localhost;Database=master;user id=sa;password=Passw0rd");
             //optionsBuilder.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]);
-            optionsBuilder.UseMySQL(Configuration["ConnectionStrings:DefaultConnection"]);
+
+            //this one is good?
+            //optionsBuilder.UseMySQL(Configuration["ConnectionStrings:DefaultConnection"]);
+
+            //mysql test
+            var host = Configuration["DBHOST"] ?? "localhost";
+            optionsBuilder.UseMySQL($"server={host};port=3306;database=db;uid=root;password=Passw0rd");
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

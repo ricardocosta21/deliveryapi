@@ -79,8 +79,15 @@ namespace Supermarket.API
             {
                 //options.UseInMemoryDatabase("supermarket-api-in-memory");
 
+                //sql server
                 //options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]);
-                options.UseMySQL(Configuration["ConnectionStrings:DefaultConnection"]);
+
+                //mysql. this one is good
+                //options.UseMySQL(Configuration["ConnectionStrings:DefaultConnection"]);
+
+                var host = Configuration["DBHOST"] ?? "localhost";
+
+                options.UseMySQL($"server={host};port=3306;database=db;uid=root;password=Passw0rd");                
             });
 
 
@@ -115,6 +122,7 @@ namespace Supermarket.API
             app.UseCors("MyPolicy");
 
             //app.UseHttpsRedirection();
+
 
             app.UseMvc(routes =>
             {

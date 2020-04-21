@@ -1,5 +1,6 @@
 /Users/ricardocosta/development/supermarketV4/bin/Debug/netcoreapp2.2/appsettings.Development.json
 /Users/ricardocosta/development/supermarketV4/bin/Debug/netcoreapp2.2/appsettings.json
+/Users/ricardocosta/development/supermarketV4/bin/Debug/netcoreapp2.2/package-lock.json
 /Users/ricardocosta/development/supermarketV4/bin/Debug/netcoreapp2.2/Properties/launchSettings.json
 /Users/ricardocosta/development/supermarketV4/bin/Debug/netcoreapp2.2/supermarketapi.deps.json
 /Users/ricardocosta/development/supermarketV4/bin/Debug/netcoreapp2.2/supermarketapi.runtimeconfig.json
@@ -7,6 +8,7 @@
 /Users/ricardocosta/development/supermarketV4/bin/Debug/netcoreapp2.2/supermarketapi.dll
 /Users/ricardocosta/development/supermarketV4/bin/Debug/netcoreapp2.2/supermarketapi.pdb
 /Users/ricardocosta/development/supermarketV4/bin/Debug/netcoreapp2.2/supermarketapi.xml
+/Users/ricardocosta/development/supermarketV4/obj/Debug/netcoreapp2.2/supermarketapi.csproj.CoreCompileInputs.cache
 /Users/ricardocosta/development/supermarketV4/obj/Debug/netcoreapp2.2/supermarketapi.RazorAssemblyInfo.cache
 /Users/ricardocosta/development/supermarketV4/obj/Debug/netcoreapp2.2/supermarketapi.RazorAssemblyInfo.cs
 /Users/ricardocosta/development/supermarketV4/obj/Debug/netcoreapp2.2/supermarketapi.AssemblyInfoInputs.cache
@@ -15,7 +17,4 @@
 /Users/ricardocosta/development/supermarketV4/obj/Debug/netcoreapp2.2/supermarketapi.dll
 /Users/ricardocosta/development/supermarketV4/obj/Debug/netcoreapp2.2/supermarketapi.xml
 /Users/ricardocosta/development/supermarketV4/obj/Debug/netcoreapp2.2/supermarketapi.pdb
-/Users/ricardocosta/development/supermarketV4/obj/Debug/netcoreapp2.2/supermarketapi.csprojAssemblyReference.cache
-/Users/ricardocosta/development/supermarketV4/obj/Debug/netcoreapp2.2/supermarketapi.csproj.CoreCompileInputs.cache
 /Users/ricardocosta/development/supermarketV4/obj/Debug/netcoreapp2.2/supermarketapi.genruntimeconfig.cache
-/Users/ricardocosta/development/supermarketV4/bin/Debug/netcoreapp2.2/package-lock.json
