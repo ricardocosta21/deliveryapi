@@ -24,8 +24,8 @@ services:
   web:
     # build: .
     build:
-      context: 
-      dockerfile: reactboilerplate/Dockerfile
+      context: .
+      dockerfile: ./Dockerfile
     # Change the port if you'd like to expose your project locally on a
     # different port, for example if you already use port 8000 for
     # something else.
