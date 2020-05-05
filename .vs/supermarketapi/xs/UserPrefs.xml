@@ -1,26 +1,25 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Contexts/AppDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
     <Files>
-      <File FileName="Dockerfile" Line="23" Column="14" IsPinned="True" />
-      <File FileName="appsettings.json" Line="17" Column="1" IsPinned="True" />
-      <File FileName="Startup.cs" Line="81" Column="17" />
-      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="21" Column="10" />
-      <File FileName="Domain/Models/Category.cs" />
-      <File FileName="Properties/launchSettings.json" Line="30" Column="2" />
+      <File FileName="appsettings.json" Line="1" Column="1" IsPinned="True" />
+      <File FileName="Startup.cs" />
+      <File FileName="Persistence/Contexts/AppDbContext.cs" />
+      <File FileName="Services/CategoryService.cs" />
+      <File FileName="Controllers/CategoriesController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="supermarketapi" expanded="True">
             <Node name="supermarketapi" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="CategoriesController.cs" selected="True" />
+              </Node>
               <Node name="Domain" expanded="True">
                 <Node name="Repositories" expanded="True" />
               </Node>
               <Node name="Persistence" expanded="True">
-                <Node name="Contexts" expanded="True">
-                  <Node name="AppDbContext.cs" selected="True" />
-                </Node>
+                <Node name="Contexts" expanded="True" />
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />

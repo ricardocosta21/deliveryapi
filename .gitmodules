@@ -1,0 +1,3 @@
+[submodule "reactboilerplate"]
+	path = reactboilerplate
+	url = https://github.com/ricardocosta21/reactboilerplate.git
