@@ -39,5 +39,6 @@ services:
     # the project locally in Live configuration, you will need to change this.
     # See https://docs.divio.com/en/latest/how-to/local-in-live-mode
     command: npm run start
+    # update:1.0
 volumes:
   datafiles:
