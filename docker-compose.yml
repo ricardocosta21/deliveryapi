@@ -30,7 +30,7 @@ services:
     # different port, for example if you already use port 8000 for
     # something else.
     ports:
-      - "8000:80"
+      - "80:80"
     #volumes:
       #- ".:/app:rw"
     # There is currently a bug: https://github.com/facebook/create-react-app/issues/8688#issuecomment-602149917
