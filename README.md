@@ -1,8 +1,8 @@
 
 
-# @ version v5
+# @ version v1
 
-Supermarket api v5 - implementing into a kubernetes cluster
+Delivery api v1
 
 # Supermarket API
 
