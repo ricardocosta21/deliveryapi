@@ -1,0 +1,3 @@
+[submodule "deliveryclient"]
+	path = deliveryclient
+	url = https://github.com/ricardocosta21/deliveryclient.git
