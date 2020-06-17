@@ -85,9 +85,12 @@ namespace Supermarket.API
                 //mysql. this one is good
                 //options.UseMySQL(Configuration["ConnectionStrings:DefaultConnection"]);
 
-                var host = Configuration["DBHOST"] ?? "localhost";
+                //var host = Configuration["DBHOST"] ?? "localhost";
 
-                options.UseMySQL($"server={host};port=3306;database=db;uid=root;password=Passw0rd");                
+                //options.UseMySQL($"server={host};port=3306;database=db;uid=root;password=Passw0rd");
+
+                options.UseMySQL($"server=databasemaster.ce6x33en43re.us-east-1.rds.amazonaws.com;port=3306;database=databasemaster;uid=admin;password=Gen21ratoy");
+
             });
 
 

@@ -31,8 +31,10 @@ namespace Supermarket.API.Persistence.Contexts
             //optionsBuilder.UseMySQL(Configuration["ConnectionStrings:DefaultConnection"]);
 
             //mysql test
-            var host = Configuration["DBHOST"] ?? "localhost";
-            optionsBuilder.UseMySQL($"server={host};port=3306;database=db;uid=root;password=Passw0rd");
+            //var host = Configuration["DBHOST"] ?? "localhost";
+            //optionsBuilder.UseMySQL($"server={host};port=3306;database=db;uid=root;password=Passw0rd");
+
+            optionsBuilder.UseMySQL($"server=databasemaster.ce6x33en43re.us-east-1.rds.amazonaws.com;port=3306;database=databasemaster;uid=admin;password=Gen21ratoy");
 
         }
 
