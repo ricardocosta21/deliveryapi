@@ -1,24 +1,24 @@
 ﻿version: '3'
 services:
-  db:
-    image: mysql
-    volumes:
-       - datafiles:/var/lib/mysql
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: Passw0rd
+  # db:
+  #   image: mysql
+  #   volumes:
+  #      - datafiles:/var/lib/mysql
+  #   restart: always
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: Passw0rd
 
   mvc:
     build:
       context: .
       dockerfile: Dockerfile
-    depends_on:
-      - db
+    # depends_on:
+    #   - db
     ports:
       - "8888:80"
     restart: always
     environment:
-      - DBHOST=db
+      # - DBHOST=db
       - ASPNETCORE_ENVIRONMENT=Development
 
   web:
