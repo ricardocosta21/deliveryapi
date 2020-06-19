@@ -1,10 +1,5 @@
-#FROM microsoft/dotnet:2.2-aspnetcore-runtime
-#WORKDIR /app
-#COPY /app /app
-#CMD ASPNETCORE_URLS=http://*:$PORT dotnet supermarket-api.dll
-
 # STAGE01 - Build application and its dependencies
-FROM microsoft/dotnet:2.2-sdk AS build-env
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
 WORKDIR /app
 COPY *.csproj ./
 COPY . ./
@@ -15,7 +10,7 @@ FROM build-env AS publish
 RUN dotnet publish -c Release -o /app
 
 # STAGE03 - Create the final image
-FROM microsoft/dotnet:2.2-aspnetcore-runtime
+FROM mcr.microsoft.com/dotnet/core/runtime:3.1
 WORKDIR /app
 LABEL Author="Ricardo Costa"
 LABEL Maintainer="testingAPI"

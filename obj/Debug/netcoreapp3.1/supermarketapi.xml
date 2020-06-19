@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>supermarketapi</name>
+    </assembly>
+    <members>
+        <member name="M:Supermarket.API.Controllers.CategoriesController.GetAllAsync">
+            <summary>
+            Lists all category items.
+            </summary>
+            <returns>List os categories.</returns>
+        </member>
+        <member name="M:Supermarket.API.Controllers.CategoriesController.ListItemAsync(System.Int32)">
+            <summary>
+            Lists all categories.
+            </summary>
+            <returns>List os categories.</returns>
+        </member>
+        <member name="M:Supermarket.API.Controllers.CategoriesController.PostAsync(Supermarket.API.Domain.Models.Category)">
+            <summary>
+            Adds a new category.
+            </summary>
+            <param name="category">Category object data.</param>
+            <returns>Response for the request.</returns>
+            //
+            Body
+        </member>
+        <member name="M:Supermarket.API.Controllers.CategoriesController.PutAsync(Supermarket.API.Domain.Models.Category,System.String)">
+            <summary>
+            Updates an existing category according to an identifier.
+            </summary>
+            <param name="category">Category object.</param>
+            <param name="newName">Updated category.name data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Supermarket.API.Controllers.CategoriesController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a given category according to an identifier.
+            </summary>
+            <param name="id">Category identifier.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Supermarket.API.Controllers.ProductsController.ListAsync(Supermarket.API.Resources.ProductsQueryResource)">
+            <summary>
+            Lists all existing products.
+            </summary>
+            <returns>List of products.</returns>
+        </member>
+        <member name="M:Supermarket.API.Controllers.ProductsController.PostAsync(Supermarket.API.Resources.SaveProductResource)">
+            <summary>
+            Saves a new product.
+            </summary>
+            <param name="resource">Product data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Supermarket.API.Controllers.ProductsController.PutAsync(System.Int32,Supermarket.API.Resources.SaveProductResource)">
+            <summary>
+            Updates an existing product according to an identifier.
+            </summary>
+            <param name="id">Product identifier.</param>
+            <param name="resource">Product data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Supermarket.API.Controllers.ProductsController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a given product according to an identifier.
+            </summary>
+            <param name="id">Product identifier.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Supermarket.API.Domain.Services.Communication.CategoryResponse.#ctor(Supermarket.API.Domain.Models.Category)">
+            <summary>
+            Creates a success response.
+            </summary>
+            <param name="category">Saved category.</param>
+            <returns>Response.</returns>
+        </member>
+        <member name="M:Supermarket.API.Domain.Services.Communication.CategoryResponse.#ctor(System.String)">
+            <summary>
+            Creates am error response.
+            </summary>
+            <param name="message">Error message.</param>
+            <returns>Response.</returns>
+        </member>
+    </members>
+</doc>

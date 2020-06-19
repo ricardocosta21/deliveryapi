@@ -1,6 +1,6 @@
 using System;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.InMemory.ValueGeneration.Internal;
+//using Microsoft.EntityFrameworkCore.InMemory.ValueGeneration.Internal;
 using Supermarket.API.Domain.Models;
 using System.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
