@@ -10,7 +10,7 @@ FROM build-env AS publish
 RUN dotnet publish -c Release -o /app
 
 # STAGE03 - Create the final image
-FROM mcr.microsoft.com/dotnet/core/runtime:3.1
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
 LABEL Author="Ricardo Costa"
 LABEL Maintainer="testingAPI"
