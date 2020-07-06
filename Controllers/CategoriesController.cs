@@ -62,7 +62,7 @@ namespace Supermarket.API.Controllers
         // "name": "Animais"
         //}
         [HttpPost]
-        [ProducesResponseType(typeof(Boolean), 201)]
+        [ProducesResponseType(typeof(bool), 201)]
         [ProducesResponseType(typeof(ErrorResource), 400)]
         public async Task<bool> PostAsync([FromBody]Category category)
         {            

@@ -15,6 +15,7 @@ using Supermarket.API.Persistence.Contexts;
 using Supermarket.API.Persistence.Repositories;
 using Supermarket.API.Services;
 using Swashbuckle.AspNetCore.Swagger;
+using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
 
 namespace Supermarket.API
 {
@@ -32,6 +33,8 @@ namespace Supermarket.API
             services.AddMemoryCache();
 
             services.AddControllers();
+
+            services.AddMvc().AddNewtonsoftJson();
 
             // Add Cors
             services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
