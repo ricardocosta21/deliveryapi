@@ -92,7 +92,7 @@ namespace Supermarket.API
 
                 //options.UseMySQL($"server={host};port=3306;database=db;uid=root;password=Passw0rd");
 
-                options.UseMySQL($"server=databasedelivery.ci6cuzvco6cc.us-east-2.rds.amazonaws.com;port=3306;database=databasemaster;uid=admin;password=Gen21ratoy");
+                options.UseMySQL($"server=dbsuper.ci6cuzvco6cc.us-east-2.rds.amazonaws.com;port=3306;database=dbsuper;uid=admin;password=gen21ratoy");
 
             });
 
