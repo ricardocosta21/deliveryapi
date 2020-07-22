@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DMFP/4gYQ3VcyR+tQlY9/9pr/ejaH/zNrf1QhlFzJjJM1jbIG9nNF9w0me91QjNtCDtd3GlLHYfWEuLutyv4pw==",
+  "dgSpecHash": "yASX7JYpb5aI9uY2o1q9grwDEfapmpj0fuB825r3mDf3gdBRX+k7bmS01rgV1KJle2jlxmdpHh04dPOGgOA43g==",
   "success": true,
   "projectFilePath": "/Users/ricardocosta/development/core/deliveryAPI/supermarketapi.csproj",
   "expectedPackageFiles": [
@@ -74,7 +74,7 @@
     "/Users/ricardocosta/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.0.2/sqlitepclraw.provider.dynamic_cdecl.2.0.2.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/ssh.net/2016.1.0/ssh.net.2016.1.0.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/sshnet.security.cryptography/1.2.0/sshnet.security.cryptography.1.2.0.nupkg.sha512",
-    "/Users/ricardocosta/.nuget/packages/stripe.net/37.21.0/stripe.net.37.21.0.nupkg.sha512",
+    "/Users/ricardocosta/.nuget/packages/stripe.net/37.24.0/stripe.net.37.24.0.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/swashbuckle.aspnetcore/5.4.1/swashbuckle.aspnetcore.5.4.1.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/swashbuckle.aspnetcore.swagger/5.4.1/swashbuckle.aspnetcore.swagger.5.4.1.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.4.1/swashbuckle.aspnetcore.swaggergen.5.4.1.nupkg.sha512",
