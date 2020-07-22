@@ -36,6 +36,7 @@
           "MySql.Data.EntityFrameworkCore": "8.0.20",
           "Newtonsoft.Json": "12.0.3",
           "Pomelo.EntityFrameworkCore.MySql": "3.1.1",
+          "Stripe.net": "37.21.0",
           "Swashbuckle.AspNetCore": "5.4.1",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -784,7 +785,7 @@
           "K4os.Hash.xxHash": "1.0.6",
           "SSH.NET": "2016.1.0",
           "System.Buffers": "4.5.0",
-          "System.Configuration.ConfigurationManager": "4.4.1",
+          "System.Configuration.ConfigurationManager": "4.5.0",
           "System.Runtime.CompilerServices.Unsafe": "4.6.0",
           "System.Security.Permissions": "4.6.0",
           "System.Text.Encoding.CodePages": "4.4.0"
@@ -1161,6 +1162,22 @@
           "lib/netstandard1.3/SshNet.Security.Cryptography.dll": {}
         }
       },
+      "Stripe.net/37.21.0": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
+          "Newtonsoft.Json": "12.0.3",
+          "System.Configuration.ConfigurationManager": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Stripe.net.dll": {
+            "assemblyVersion": "37.21.0.0",
+            "fileVersion": "37.21.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Stripe.net.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/5.4.1": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
@@ -1251,14 +1268,15 @@
           "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
         }
       },
-      "System.Configuration.ConfigurationManager/4.4.1": {
+      "System.Configuration.ConfigurationManager/4.5.0": {
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "4.4.0"
+          "System.Security.Cryptography.ProtectedData": "4.5.0",
+          "System.Security.Permissions": "4.6.0"
         },
         "runtime": {
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25921.2"
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.26515.6"
           }
         },
         "compile": {
@@ -1727,19 +1745,19 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Security.Cryptography.ProtectedData/4.4.0": {
+      "System.Security.Cryptography.ProtectedData/4.5.0": {
         "runtime": {
           "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.25519.3"
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
           }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.25519.3"
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
@@ -4050,6 +4068,13 @@
       "path": "sshnet.security.cryptography/1.2.0",
       "hashPath": "sshnet.security.cryptography.1.2.0.nupkg.sha512"
     },
+    "Stripe.net/37.21.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kJRwz2v8FNtZjbAby2UbEJ9NpEOfrsabsbTkiKWFVEHETC0tB5IzLkOoWXa6tXuwD2Pu6XmyBuR0UpoOxNGwJw==",
+      "path": "stripe.net/37.21.0",
+      "hashPath": "stripe.net.37.21.0.nupkg.sha512"
+    },
     "Swashbuckle.AspNetCore/5.4.1": {
       "type": "package",
       "serviceable": true,
@@ -4120,12 +4145,12 @@
       "path": "system.componentmodel.annotations/4.7.0",
       "hashPath": "system.componentmodel.annotations.4.7.0.nupkg.sha512"
     },
-    "System.Configuration.ConfigurationManager/4.4.1": {
+    "System.Configuration.ConfigurationManager/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jz3TWKMAeuDEyrPCK5Jyt4bzQcmzUIMcY9Ud6PkElFxTfnsihV+9N/UCqvxe1z5gc7jMYAnj7V1COMS9QKIuHQ==",
-      "path": "system.configuration.configurationmanager/4.4.1",
-      "hashPath": "system.configuration.configurationmanager.4.4.1.nupkg.sha512"
+      "sha512": "sha512-UIFvaFfuKhLr9u5tWMxmVoDPkFeD+Qv8gUuap4aZgVGYSYMdERck4OhLN/2gulAc0nYTEigWXSJNNWshrmxnng==",
+      "path": "system.configuration.configurationmanager/4.5.0",
+      "hashPath": "system.configuration.configurationmanager.4.5.0.nupkg.sha512"
     },
     "System.Console/4.3.0": {
       "type": "package",
@@ -4442,12 +4467,12 @@
       "path": "system.security.cryptography.primitives/4.3.0",
       "hashPath": "system.security.cryptography.primitives.4.3.0.nupkg.sha512"
     },
-    "System.Security.Cryptography.ProtectedData/4.4.0": {
+    "System.Security.Cryptography.ProtectedData/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cJV7ScGW7EhatRsjehfvvYVBvtiSMKgN8bOVI0bQhnF5bU7vnHVIsH49Kva7i7GWaWYvmEzkYVk1TC+gZYBEog==",
-      "path": "system.security.cryptography.protecteddata/4.4.0",
-      "hashPath": "system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
+      "sha512": "sha512-wLBKzFnDCxP12VL9ANydSYhk59fC4cvOr9ypYQLPnAj48NQIhqnjdD2yhP8yEKyBJEjERWS9DisKL7rX5eU25Q==",
+      "path": "system.security.cryptography.protecteddata/4.5.0",
+      "hashPath": "system.security.cryptography.protecteddata.4.5.0.nupkg.sha512"
     },
     "System.Security.Cryptography.X509Certificates/4.3.0": {
       "type": "package",

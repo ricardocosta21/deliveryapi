@@ -1,11 +1,5 @@
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/appsettings.json
-/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/deliveryclient/app/package.json
-/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/deliveryclient/app/translations/de.json
-/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/deliveryclient/app/translations/en.json
-/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/deliveryclient/internals/templates/translations/en.json
-/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/deliveryclient/package-lock.json
-/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/deliveryclient/package.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/package.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/supermarketapi.deps.json
@@ -97,3 +91,7 @@
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
+/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/deliverydashboard/package-lock.json
+/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/deliverydashboard/package.json
+/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/deliverydashboard/public/manifest.json
+/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/Stripe.net.dll

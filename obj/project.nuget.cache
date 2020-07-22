@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ySkmIJbKzBZ2HtEGK5fuiVmwqUFt6omUL/FoH0wVWGCD6p/cBzDLdS1sglF1qjewKsx1uQuhjqF6Qs4JSzL2Ig==",
+  "dgSpecHash": "DMFP/4gYQ3VcyR+tQlY9/9pr/ejaH/zNrf1QhlFzJjJM1jbIG9nNF9w0me91QjNtCDtd3GlLHYfWEuLutyv4pw==",
   "success": true,
   "projectFilePath": "/Users/ricardocosta/development/core/deliveryAPI/supermarketapi.csproj",
   "expectedPackageFiles": [
@@ -74,6 +74,7 @@
     "/Users/ricardocosta/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.0.2/sqlitepclraw.provider.dynamic_cdecl.2.0.2.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/ssh.net/2016.1.0/ssh.net.2016.1.0.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/sshnet.security.cryptography/1.2.0/sshnet.security.cryptography.1.2.0.nupkg.sha512",
+    "/Users/ricardocosta/.nuget/packages/stripe.net/37.21.0/stripe.net.37.21.0.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/swashbuckle.aspnetcore/5.4.1/swashbuckle.aspnetcore.5.4.1.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/swashbuckle.aspnetcore.swagger/5.4.1/swashbuckle.aspnetcore.swagger.5.4.1.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.4.1/swashbuckle.aspnetcore.swaggergen.5.4.1.nupkg.sha512",
@@ -84,7 +85,7 @@
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.collections.concurrent/4.3.0/system.collections.concurrent.4.3.0.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/system.collections.immutable/1.7.1/system.collections.immutable.1.7.1.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "/Users/ricardocosta/.nuget/packages/system.configuration.configurationmanager/4.4.1/system.configuration.configurationmanager.4.4.1.nupkg.sha512",
+    "/Users/ricardocosta/.nuget/packages/system.configuration.configurationmanager/4.5.0/system.configuration.configurationmanager.4.5.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.console/4.3.0/system.console.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
@@ -130,7 +131,7 @@
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.security.cryptography.encoding/4.3.0/system.security.cryptography.encoding.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.security.cryptography.openssl/4.3.0/system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.security.cryptography.primitives/4.3.0/system.security.cryptography.primitives.4.3.0.nupkg.sha512",
-    "/Users/ricardocosta/.nuget/packages/system.security.cryptography.protecteddata/4.4.0/system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
+    "/Users/ricardocosta/.nuget/packages/system.security.cryptography.protecteddata/4.5.0/system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.security.cryptography.x509certificates/4.3.0/system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/system.security.permissions/4.6.0/system.security.permissions.4.6.0.nupkg.sha512",
     "/Users/ricardocosta/.nuget/packages/system.security.principal.windows/4.6.0/system.security.principal.windows.4.6.0.nupkg.sha512",
