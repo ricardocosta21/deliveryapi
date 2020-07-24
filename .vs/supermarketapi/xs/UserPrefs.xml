@@ -1,15 +1,14 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/Models/Cart.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/Models/StripePayment.cs">
     <Files>
-      <File FileName="Controllers/CategoriesController.cs" Line="67" Column="61" />
-      <File FileName="Controllers/PaymentController.cs" Line="35" Column="59" />
-      <File FileName="Services/CategoryService.cs" Line="1" Column="1" />
-      <File FileName="Persistence/Repositories/CategoryRepository.cs" />
+      <File FileName="Controllers/CategoriesController.cs" Line="52" Column="1" />
+      <File FileName="Controllers/PaymentController.cs" Line="49" Column="60" />
+      <File FileName="Services/CategoryService.cs" Line="62" Column="1" />
+      <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="18" Column="51" />
       <File FileName="Startup.cs" Line="72" Column="1" />
       <File FileName="Persistence/Contexts/AppDbContext.cs" Line="16" Column="53" />
-      <File FileName="appsettings.json" Line="20" Column="1" />
-      <File FileName="Domain/Models/Product.cs" Line="3" Column="4" />
-      <File FileName="Domain/Models/Cart.cs" Line="1" Column="1" />
+      <File FileName="appsettings.json" Line="6" Column="5" />
+      <File FileName="Domain/Models/Cart.cs" Line="5" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,10 +16,8 @@
           <Node name="supermarketapi" expanded="True">
             <Node name="supermarketapi" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Domain" expanded="True">
-                <Node name="Models" expanded="True">
-                  <Node name="Cart.cs" selected="True" />
-                </Node>
+              <Node name="Domain" expanded="True" selected="True">
+                <Node name="Models" expanded="True" />
               </Node>
               <Node name="Mapping" expanded="True" />
               <Node name="Persistence" expanded="True" />

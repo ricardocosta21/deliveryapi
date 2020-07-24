@@ -37,15 +37,16 @@ namespace supermarketapi.Controllers
         {
             var myCharge = new ChargeCreateOptions();
             myCharge.Source = paymentRequest.tokenId;
-            myCharge.Amount = paymentRequest.amount;
+            //Always decide how much to charge on the server side, a trusted environment, as opposed to the client.
+            myCharge.Amount = 150;
             myCharge.Customer = paymentRequest.customer;
             myCharge.Currency = "gbp";
             myCharge.Description = paymentRequest.productName;
             myCharge.Metadata = new Dictionary<string, string>();
             myCharge.Metadata["OurRef"] = "OurRef-" + Guid.NewGuid().ToString();
 
-            var chargeService = new ChargeService();
-            Charge stripeCharge = chargeService.Create(myCharge);
+            var service = new ChargeService();
+            Charge stripeCharge = service.Create(myCharge);
 
             return Json(stripeCharge);
         }
