@@ -69,6 +69,8 @@ namespace Supermarket.API
             services.AddAutoMapper(typeof(Startup));
 
             services.AddHealthChecks();
+
+            services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -82,7 +84,7 @@ namespace Supermarket.API
                 app.UseHsts();
             }
 
-            //StripeConfiguration.SetApiKey(Configuration.GetSection("Stripe")["SecretKey"]);
+            StripeConfiguration.ApiKey = Configuration.GetSection("Stripe")["SecretKey"];
 
             app.UseCors("MyPolicy");
 

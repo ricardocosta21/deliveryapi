@@ -13,6 +13,8 @@ namespace Supermarket.API.Persistence.Contexts
 
         public DbSet<Product> Products { get; set; }
 
+        //public DbSet<Stripe> Stripes { get; set; }
+
         public IConfiguration Configuration { get; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options, IConfiguration configuration) : base(options)
@@ -27,8 +29,6 @@ namespace Supermarket.API.Persistence.Contexts
             //optionsBuilder.UseSqlServer("Server=localhost;Database=master;user id=sa;password=Passw0rd");
             //optionsBuilder.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]);
 
-            //this one is good?
-            //optionsBuilder.UseMySQL(Configuration["ConnectionStrings:DefaultConnection"]);
 
             //mysql test
             //var host = Configuration["DBHOST"] ?? "localhost";

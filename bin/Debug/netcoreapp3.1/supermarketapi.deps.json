@@ -36,7 +36,7 @@
           "MySql.Data.EntityFrameworkCore": "8.0.20",
           "Newtonsoft.Json": "12.0.3",
           "Pomelo.EntityFrameworkCore.MySql": "3.1.1",
-          "Stripe.net": "37.21.0",
+          "Stripe.net": "37.24.0",
           "Swashbuckle.AspNetCore": "5.4.1",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -1162,7 +1162,7 @@
           "lib/netstandard1.3/SshNet.Security.Cryptography.dll": {}
         }
       },
-      "Stripe.net/37.21.0": {
+      "Stripe.net/37.24.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
           "Newtonsoft.Json": "12.0.3",
@@ -1170,8 +1170,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/Stripe.net.dll": {
-            "assemblyVersion": "37.21.0.0",
-            "fileVersion": "37.21.0.0"
+            "assemblyVersion": "37.24.0.0",
+            "fileVersion": "37.24.0.0"
           }
         },
         "compile": {
@@ -4068,12 +4068,12 @@
       "path": "sshnet.security.cryptography/1.2.0",
       "hashPath": "sshnet.security.cryptography.1.2.0.nupkg.sha512"
     },
-    "Stripe.net/37.21.0": {
+    "Stripe.net/37.24.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kJRwz2v8FNtZjbAby2UbEJ9NpEOfrsabsbTkiKWFVEHETC0tB5IzLkOoWXa6tXuwD2Pu6XmyBuR0UpoOxNGwJw==",
-      "path": "stripe.net/37.21.0",
-      "hashPath": "stripe.net.37.21.0.nupkg.sha512"
+      "sha512": "sha512-uJKbUiR6LMhmWAMdEleXGUKgvIh8jnQq6s2blT8YpBXMiBjejAc5FTQzbyY0WkQ0JaNFe0TFlEydWgjf20hyjQ==",
+      "path": "stripe.net/37.24.0",
+      "hashPath": "stripe.net.37.24.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/5.4.1": {
       "type": "package",
