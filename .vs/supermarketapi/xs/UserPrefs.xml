@@ -1,29 +1,20 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/Models/StripePayment.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
     <Files>
-      <File FileName="Controllers/CategoriesController.cs" Line="52" Column="1" />
-      <File FileName="Controllers/PaymentController.cs" Line="49" Column="60" />
+      <File FileName="Controllers/CategoriesController.cs" Line="34" Column="51" />
+      <File FileName="Controllers/PaymentController.cs" Line="37" Column="10" />
       <File FileName="Services/CategoryService.cs" Line="62" Column="1" />
-      <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="18" Column="51" />
-      <File FileName="Startup.cs" Line="72" Column="1" />
-      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="16" Column="53" />
-      <File FileName="appsettings.json" Line="6" Column="5" />
+      <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="9" Column="2" />
+      <File FileName="Startup.cs" Line="51" Column="28" />
+      <File FileName="appsettings.json" Line="15" Column="95" />
       <File FileName="Domain/Models/Cart.cs" Line="5" Column="31" />
+      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="16" Column="53" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="supermarketapi" expanded="True">
-            <Node name="supermarketapi" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Domain" expanded="True" selected="True">
-                <Node name="Models" expanded="True" />
-              </Node>
-              <Node name="Mapping" expanded="True" />
-              <Node name="Persistence" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Services" expanded="True" />
-            </Node>
+            <Node name="supermarketapi" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>

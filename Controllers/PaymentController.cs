@@ -13,7 +13,7 @@ using Stripe;
 
 namespace supermarketapi.Controllers
 {
-    [Route("/api/payment")]
+    [Route("/api/create-payment-intent")]
     [Produces("application/json")]
     [ApiController]
     public class PaymentController : Controller
@@ -31,24 +31,48 @@ namespace supermarketapi.Controllers
             return View();
         }
 
+        
+
         [HttpPost]
-        [ProducesResponseType(typeof(ErrorResource), 400)]
-        public JsonResult Post([FromBody] StripePayment paymentRequest)
+        //public IActionResult Post([FromBody] StripeCharge request)
+        public IActionResult Post()
         {
-            var myCharge = new ChargeCreateOptions();
-            myCharge.Source = paymentRequest.tokenId;
-            //Always decide how much to charge on the server side, a trusted environment, as opposed to the client.
-            myCharge.Amount = 150;
-            myCharge.Customer = paymentRequest.customer;
-            myCharge.Currency = "gbp";
-            myCharge.Description = paymentRequest.productName;
-            myCharge.Metadata = new Dictionary<string, string>();
-            myCharge.Metadata["OurRef"] = "OurRef-" + Guid.NewGuid().ToString();
+            var total = "0";
+            var paymentIntents = new PaymentIntentService();
+            var paymentIntent = paymentIntents.Create(new PaymentIntentCreateOptions
+            {
+                Amount = CalculateOrderAmount(total),
+                Currency = "gbp",
+            });
+            //var paymentIntent = paymentIntents.Create(new PaymentIntentCreateOptions
+            //{
+            //    Amount = 1099,
+            //    Currency = "gbp",
+            //});
 
-            var service = new ChargeService();
-            Charge stripeCharge = service.Create(myCharge);
+            //var myCharge = new ChargeCreateOptions();
+            //myCharge.Source = chargeRequest.tokenId;
+            ////Always decide how much to charge on the server side, a trusted environment, as opposed to the client.
+            //myCharge.Amount = 150;
+            //myCharge.Customer = chargeRequest.customer;
+            //myCharge.Currency = "gbp";
+            //myCharge.Description = chargeRequest.productName;
+            //myCharge.Metadata = new Dictionary<string, string>();
+            //myCharge.Metadata["OurRef"] = "OurRef-" + Guid.NewGuid().ToString();
 
-            return Json(stripeCharge);
+            //var service = new ChargeService();
+            //Charge stripeCharge = service.Create(myCharge);
+
+            return Json(new { clientSecret = paymentIntent.ClientSecret });
+
+        }
+
+        private int CalculateOrderAmount(string items)
+        {
+            // Replace this constant with a calculation of the order's amount
+            // Calculate the order total on the server to prevent
+            // people from directly manipulating the amount on the client
+            return 1400;
         }
 
 

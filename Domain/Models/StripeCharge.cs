@@ -2,10 +2,9 @@
 
 namespace Supermarket.API.Domain.Models
 {
-    public class StripePayment
+    public class StripeCharge
     {
-        public string customer { get; set; }
-        public string tokenId { get; set; }
+        public int Id { get; set; }
         public string productName { get; set; }
     }
 }

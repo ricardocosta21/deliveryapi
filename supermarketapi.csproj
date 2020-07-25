@@ -44,4 +44,7 @@
     <None Include="**/*" />
     <None Include="**/*" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Domain\Models\StripePayment.cs" />
+  </ItemGroup>
 </Project>
