@@ -7,9 +7,9 @@ namespace Supermarket.API.Domain.Repositories
 {
     public interface IProductRepository
     {
-        Task<QueryResult<Product>> ListAsync(ProductsQuery query);
-        Task AddAsync(Product product);
+        Task<IEnumerable<Product>> ListAsync();
         Task<Product> FindByIdAsync(int id);
+        Task AddAsync(Product product);
         void Update(Product product);
         void Remove(Product product);
     }

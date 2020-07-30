@@ -13,34 +13,9 @@ namespace Supermarket.API.Persistence.Repositories
     {
         public ProductRepository(AppDbContext context) : base(context) { }
 
-        public async Task<QueryResult<Product>> ListAsync(ProductsQuery query)
+        public async Task<IEnumerable<Product>> ListAsync()
         {
-            IQueryable<Product> queryable = _context.Products
-                                                    .Include(p => p.Category)
-                                                    .AsNoTracking(); 
-                                    
-            // AsNoTracking tells EF Core it doesn't need to track changes on listed entities. Disabling entity
-            // tracking makes the code a little faster
-            if(query.CategoryId.HasValue && query.CategoryId > 0)
-            {
-                queryable = queryable.Where(p => p.CategoryId == query.CategoryId);
-            }
-            
-            // Here I count all items present in the database for the given query, to return as part of the pagination data.
-            int totalItems = await queryable.CountAsync();
-            
-            // Here I apply a simple calculation to skip a given number of items, according to the current page and amount of items per page,
-            // and them I return only the amount of desired items. The methods "Skip" and "Take" do the trick here.
-            List<Product> products = await queryable.Skip((query.Page - query.ItemsPerPage) * query.ItemsPerPage)
-                                                    .Take(query.ItemsPerPage)
-                                                    .ToListAsync();
-
-            // Finally I return a query result, containing all items and the amount of items in the database (necessary for client calculations of pages).
-            return new QueryResult<Product>
-            {
-                Items = products,
-                TotalItems = totalItems,
-            };
+            return await _context.Products.ToListAsync();
         }
 
         public async Task<Product> FindByIdAsync(int id)

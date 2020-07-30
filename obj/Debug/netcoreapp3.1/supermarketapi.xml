@@ -10,12 +10,6 @@
             </summary>
             <returns>List os categories.</returns>
         </member>
-        <member name="M:Supermarket.API.Controllers.CategoriesController.ListItemAsync(System.Int32)">
-            <summary>
-            Lists all categories.
-            </summary>
-            <returns>List os categories.</returns>
-        </member>
         <member name="M:Supermarket.API.Controllers.CategoriesController.PostAsync(Supermarket.API.Domain.Models.Category)">
             <summary>
             Adds a new category.
@@ -40,20 +34,20 @@
             <param name="id">Category identifier.</param>
             <returns>Response for the request.</returns>
         </member>
-        <member name="M:Supermarket.API.Controllers.ProductsController.ListAsync(Supermarket.API.Resources.ProductsQueryResource)">
+        <member name="M:Supermarket.API.Controllers.ProductsController.GetAllAsync">
             <summary>
             Lists all existing products.
             </summary>
             <returns>List of products.</returns>
         </member>
-        <member name="M:Supermarket.API.Controllers.ProductsController.PostAsync(Supermarket.API.Resources.SaveProductResource)">
+        <member name="M:Supermarket.API.Controllers.ProductsController.PostAsync(Supermarket.API.Domain.Models.Product)">
             <summary>
             Saves a new product.
             </summary>
             <param name="resource">Product data.</param>
             <returns>Response for the request.</returns>
         </member>
-        <member name="M:Supermarket.API.Controllers.ProductsController.PutAsync(System.Int32,Supermarket.API.Resources.SaveProductResource)">
+        <member name="M:Supermarket.API.Controllers.ProductsController.PutAsync(Supermarket.API.Domain.Models.Product,System.String)">
             <summary>
             Updates an existing product according to an identifier.
             </summary>

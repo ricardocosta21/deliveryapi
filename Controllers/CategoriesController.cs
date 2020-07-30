@@ -18,7 +18,7 @@ namespace Supermarket.API.Controllers
     public class CategoriesController : Controller
     {
         private readonly ICategoryService _categoryService;
-        private readonly IMapper _mapper;
+        
 
         private AppDbContext _context;
 
@@ -42,13 +42,13 @@ namespace Supermarket.API.Controllers
         /// Lists all categories.
         /// </summary>
         /// <returns>List os categories.</returns>
-        [HttpGet]
-        [Route("{id}")]
-        [ProducesResponseType(typeof(Task<Category>), 200)]
-        public async Task<Category> ListItemAsync(int id)
-        {
-            return await _categoryService.ListItemAsync(id);
-        }
+        //[HttpGet]
+        //[Route("{id}")]
+        //[ProducesResponseType(typeof(Task<Category>), 200)]
+        //public async Task<Category> ListItemAsync(int id)
+        //{
+        //    return await _categoryService.ListItemAsync(id);
+        //}
 
         /// <summary>
         /// Adds a new category.
