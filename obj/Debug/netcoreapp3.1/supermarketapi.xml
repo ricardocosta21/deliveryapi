@@ -55,7 +55,7 @@
             <param name="resource">Product data.</param>
             <returns>Response for the request.</returns>
         </member>
-        <member name="M:Supermarket.API.Controllers.ProductsController.DeleteAsync(System.Int32)">
+        <member name="M:Supermarket.API.Controllers.ProductsController.DeleteAsync(Supermarket.API.Domain.Models.Product)">
             <summary>
             Deletes a given product according to an identifier.
             </summary>

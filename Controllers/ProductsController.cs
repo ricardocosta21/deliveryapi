@@ -71,10 +71,9 @@ namespace Supermarket.API.Controllers
         [HttpDelete]
         [ProducesResponseType(typeof(bool), 200)]
         [ProducesResponseType(typeof(ErrorResource), 400)]
-        public async Task<bool> DeleteAsync(int id)
+        public async Task<bool> DeleteAsync([FromBody] Product product)
         {
-            return await _productService.DeleteAsync(id);
-
+            return await _productService.DeleteAsync(product);
         }
     }
 }

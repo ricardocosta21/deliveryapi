@@ -11,6 +11,6 @@ namespace Supermarket.API.Domain.Services
         Task<IEnumerable<Product>> ListAsync();
         Task<bool> AddAsync(Product product);
         Task<bool> UpdateAsync(Product product, string name);
-        Task<bool> DeleteAsync(int id);
+        Task<bool> DeleteAsync(Product product);
     }
 }

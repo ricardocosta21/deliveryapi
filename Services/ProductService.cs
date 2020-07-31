@@ -56,7 +56,7 @@ namespace Supermarket.API.Services
 
         public async Task<bool> UpdateAsync(Product product, string name)
         {
-            var existingProduct = await _productRepository.FindByIdAsync(product.Id);
+            var existingProduct = await _productRepository.FindByIdAsync(product);
 
             if (existingProduct == null)
                 return false;
@@ -67,7 +67,7 @@ namespace Supermarket.API.Services
 
             existingProduct.Name = product.Name;
             existingProduct.Price = product.Price;
-            
+
             try
             {
                 _productRepository.Update(existingProduct);
@@ -83,9 +83,10 @@ namespace Supermarket.API.Services
         }
 
         //public async Task<ProductResponse> DeleteAsync(int id)
-        public async Task<bool> DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(Product product)
         {
-            var existingProduct = await _productRepository.FindByIdAsync(id);
+           
+                var existingProduct = await _productRepository.FindByIdAsync(product);
 
             if (existingProduct == null)
                 return false;

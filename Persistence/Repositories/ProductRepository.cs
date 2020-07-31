@@ -18,11 +18,10 @@ namespace Supermarket.API.Persistence.Repositories
             return await _context.Products.ToListAsync();
         }
 
-        public async Task<Product> FindByIdAsync(int id)
+        public async Task<Product> FindByIdAsync(Product product)
         {
             return await _context.Products
-                                 .Include(p => p.Category)
-                                 .FirstOrDefaultAsync(p => p.Id == id); // Since Include changes the method return, we can't use FindAsync
+                                 .FirstOrDefaultAsync(p => p.Id == product.Id && p.CategoryId == product.CategoryId); // Since Include changes the method return, we can't use FindAsync
         }
 
         public async Task AddAsync(Product product)
