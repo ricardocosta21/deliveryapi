@@ -29,10 +29,20 @@ namespace Supermarket.API.Controllers
         /// Lists all existing products.
         /// </summary>
         /// <returns>List of products.</returns>
+        //[HttpGet]
+        //[Route("products")]
+        //public async Task<IEnumerable<Product>> GetAllAsync()
+        //{
+        //    return await _productService.ListAsync();
+        //}
+
         [HttpGet]
-        public async Task<IEnumerable<Product>> GetAllAsync()
+        
+        [ProducesResponseType(typeof(bool), 201)]
+        [ProducesResponseType(typeof(ErrorResource), 400)]
+        public async Task<IEnumerable<Product>> GetProductsListAsync(int categoryId)
         {
-            return await _productService.ListAsync();
+            return await _productService.ListProductsListAsync(categoryId);
         }
 
         /// <summary>

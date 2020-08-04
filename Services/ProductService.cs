@@ -37,6 +37,15 @@ namespace Supermarket.API.Services
                 return await _productRepository.ListAsync();
             
         }
+        public async Task<IEnumerable<Product>> ListProductsListAsync(int categoryId)
+        {
+            // Here I list the query result from cache if they exist, but now the data can vary according to the category ID, page and amount of
+            // items per page. I have to compose a cache to avoid returning wrong data.
+
+            return await _productRepository.ListProductsListAsync(categoryId);
+        }
+        
+
 
         public async Task<bool> AddAsync(Product product)
         {

@@ -34,7 +34,7 @@
             <param name="id">Category identifier.</param>
             <returns>Response for the request.</returns>
         </member>
-        <member name="M:Supermarket.API.Controllers.ProductsController.GetAllAsync">
+        <member name="M:Supermarket.API.Controllers.ProductsController.GetProductsListAsync(System.Int32)">
             <summary>
             Lists all existing products.
             </summary>

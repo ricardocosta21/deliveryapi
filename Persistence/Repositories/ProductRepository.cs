@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Supermarket.API.Domain.Models;
@@ -18,6 +19,31 @@ namespace Supermarket.API.Persistence.Repositories
             return await _context.Products.ToListAsync();
         }
 
+        public async Task<IEnumerable<Product>> ListProductsListAsync(int categoryId)
+        {
+            try
+            {
+                IEnumerable<Product> products = await _context.Products.ToListAsync();
+                List<Product> productsCategory = new List<Product>();
+
+                foreach (var product in products)
+                {
+                    if (product.CategoryId == categoryId)
+                    {
+                        productsCategory.Add(product);
+                    }
+                }
+
+                return productsCategory;
+            }
+            catch(Exception ex)
+            {
+                return null;
+            }
+          
+        }
+
+       
         public async Task<Product> FindByIdAsync(Product product)
         {
             return await _context.Products

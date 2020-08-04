@@ -9,6 +9,7 @@ namespace Supermarket.API.Domain.Services
     public interface IProductService
     {
         Task<IEnumerable<Product>> ListAsync();
+        Task<IEnumerable<Product>> ListProductsListAsync(int categoryId);
         Task<bool> AddAsync(Product product);
         Task<bool> UpdateAsync(Product product, string name);
         Task<bool> DeleteAsync(Product product);
