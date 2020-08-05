@@ -95,5 +95,13 @@ namespace Supermarket.API.Controllers
         {
             return await _categoryService.DeleteAsync(id);
         }
+
+        [HttpDelete("all")]
+        [ProducesResponseType(typeof(bool), 200)]
+        [ProducesResponseType(typeof(ErrorResource), 400)]
+        public async Task<bool> DeleteAllAsync()
+        {
+            return await _categoryService.DeleteAllAsync();
+        }
     }
 }

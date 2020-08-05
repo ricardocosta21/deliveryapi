@@ -24,23 +24,14 @@ namespace Supermarket.API.Persistence.Repositories
             try
             {
                 IEnumerable<Product> products = await _context.Products.ToListAsync();
-                List<Product> productsCategory = new List<Product>();
-
-                foreach (var product in products)
-                {
-                    if (product.CategoryId == categoryId)
-                    {
-                        productsCategory.Add(product);
-                    }
-                }
-
-                return productsCategory;
+                return (from Product product in products
+                        where product.CategoryId == categoryId
+                        select product).ToList();
             }
             catch(Exception ex)
             {
                 return null;
             }
-          
         }
 
        
@@ -63,6 +54,25 @@ namespace Supermarket.API.Persistence.Repositories
         public void Remove(Product product)
         {
             _context.Products.Remove(product);
+        }
+
+        public void RemoveList(int categoryId)
+        {
+           foreach(var product in _context.Products)
+            {
+                if(product.Id == categoryId)
+                {
+                    _context.Products.Remove(product);
+                }               
+            }
+        }
+
+        public void RemoveAll()
+        {
+            foreach (var product in _context.Products)
+            {
+                _context.Products.Remove(product);   
+            }
         }
     }
 }

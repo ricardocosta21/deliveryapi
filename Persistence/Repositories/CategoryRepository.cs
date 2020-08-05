@@ -47,5 +47,13 @@ namespace Supermarket.API.Persistence.Repositories
         {
             _context.Categories.Remove(category);
         }
+
+        public void RemoveAll()
+        {
+            foreach (var category in _context.Categories)
+            {
+                _context.Categories.Remove(category);
+            }
+        }
     }
 }

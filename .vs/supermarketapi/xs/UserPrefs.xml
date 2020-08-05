@@ -1,15 +1,19 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Repositories/ProductRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/CategoriesController.cs">
     <Files>
-      <File FileName="Controllers/CategoriesController.cs" Line="83" Column="54" />
-      <File FileName="Services/CategoryService.cs" Line="77" Column="10" />
-      <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="12" Column="47" />
-      <File FileName="Controllers/ProductsController.cs" Line="45" Column="63" NotebookId="1" />
-      <File FileName="Services/ProductService.cs" Line="40" Column="49" NotebookId="1" />
-      <File FileName="Persistence/Repositories/ProductRepository.cs" Line="40" Column="17" NotebookId="1" />
-      <File FileName="Domain/Repositories/IProductRepository.cs" Line="11" Column="74" NotebookId="1" />
-      <File FileName="Domain/Services/IProductService.cs" Line="14" Column="60" NotebookId="1" />
-      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="30" Column="49" NotebookId="1" />
+      <File FileName="Controllers/CategoriesController.cs" Line="3" Column="1" />
+      <File FileName="Services/CategoryService.cs" Line="16" Column="45" />
+      <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="10" Column="65" />
+      <File FileName="Domain/Models/Category.cs" Line="10" Column="33" />
+      <File FileName="Domain/Repositories/ICategoryRepository.cs" Line="15" Column="26" />
+      <File FileName="Domain/Services/ICategoryService.cs" Line="15" Column="41" />
+      <File FileName="Controllers/ProductsController.cs" Line="89" Column="28" NotebookId="1" />
+      <File FileName="Services/ProductService.cs" Line="132" Column="10" NotebookId="1" />
+      <File FileName="Domain/Services/IProductService.cs" Line="16" Column="34" NotebookId="1" />
+      <File FileName="Persistence/Repositories/ProductRepository.cs" Line="69" Column="1" NotebookId="1" />
+      <File FileName="Domain/Repositories/IProductRepository.cs" Line="17" Column="23" NotebookId="1" />
+      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="16" Column="53" NotebookId="1" />
+      <File FileName="Domain/Models/Product.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,7 +32,7 @@
               <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True" />
               <Node name="Services" expanded="True">
-                <Node name="ProductService.cs" selected="True" />
+                <Node name="CategoryService.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -42,7 +46,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/ricardocosta/development/core/deliveryAPI/supermarketapi.sln" relfile="supermarketapi.sln" line="18" column="1" />
-      <Breakpoint file="/Users/ricardocosta/development/core/deliveryAPI/Persistence/Repositories/ProductRepository.cs" relfile="Persistence/Repositories/ProductRepository.cs" line="25" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

@@ -113,5 +113,22 @@ namespace Supermarket.API.Services
                 return false;
             }
         }
+
+        
+        public async Task<bool> DeleteAllAsync()
+        {                      
+            try
+            {
+                _productRepository.RemoveAll();
+                await _unitOfWork.CompleteAsync();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                // Do some logging stuff
+                return false;
+            }
+        }
     }
 }

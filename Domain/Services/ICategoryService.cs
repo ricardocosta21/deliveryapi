@@ -13,5 +13,6 @@ namespace Supermarket.API.Domain.Services
          Task<bool> AddAsync(Category category);
          Task<bool> UpdateAsync(Category category, string newName);
          Task<bool> DeleteAsync(int id);
+         Task<bool> DeleteAllAsync();
     }
 }

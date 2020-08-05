@@ -16,13 +16,15 @@ namespace Supermarket.API.Services
     public class CategoryService : ICategoryService
     {
         private readonly ICategoryRepository _categoryRepository;
+        private readonly IProductRepository _productRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMemoryCache _cache;
         private readonly IConfiguration _configuration;
 
-        public CategoryService(ICategoryRepository categoryRepository, IUnitOfWork unitOfWork, IMemoryCache cache, IConfiguration config)
+        public CategoryService(ICategoryRepository categoryRepository, IProductRepository productRepository, IUnitOfWork unitOfWork, IMemoryCache cache, IConfiguration config)
         {
             _categoryRepository = categoryRepository;
+            _productRepository = productRepository;
             _unitOfWork = unitOfWork;
             _cache = cache;
             _configuration = config;
@@ -87,7 +89,26 @@ namespace Supermarket.API.Services
             try
             {
                  _categoryRepository.Remove(existingCategory);
+
+                _productRepository.RemoveList(id);
+
                  await _unitOfWork.CompleteAsync();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                // Do some logging stuff
+                return false;
+            }
+        }
+
+        public async Task<bool> DeleteAllAsync()
+        {
+            try
+            {
+                _categoryRepository.RemoveAll();
+                await _unitOfWork.CompleteAsync();
 
                 return true;
             }
