@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Supermarket.API.Domain.Models
+namespace supermarketapi.Domain.Models
 {
     public class StripeCharge
     {

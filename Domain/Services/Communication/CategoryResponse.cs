@@ -1,6 +1,6 @@
-using Supermarket.API.Domain.Models;
+using supermarketapi.Domain.Models;
 
-namespace Supermarket.API.Domain.Services.Communication
+namespace supermarketapi.Domain.Services.Communication
 {
     public class CategoryResponse : BaseResponse<Category>
     {

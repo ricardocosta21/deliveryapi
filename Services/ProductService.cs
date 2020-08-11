@@ -2,15 +2,15 @@ using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.Extensions.Caching.Memory;
-using Supermarket.API.Domain.Models;
-using Supermarket.API.Domain.Models.Queries;
-using Supermarket.API.Domain.Repositories;
-using Supermarket.API.Domain.Services;
-using Supermarket.API.Domain.Services.Communication;
-using Supermarket.API.Infrastructure;
+using supermarketapi.Domain.Models;
+using supermarketapi.Domain.Models.Queries;
+using supermarketapi.Domain.Repositories;
+using supermarketapi.Domain.Services;
+using supermarketapi.Domain.Services.Communication;
+using supermarketapi.Infrastructure;
 using Microsoft.Extensions.Configuration;
 
-namespace Supermarket.API.Services
+namespace supermarketapi.Services
 {
     public class ProductService : IProductService
     {

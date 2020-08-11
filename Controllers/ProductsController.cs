@@ -2,13 +2,13 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Supermarket.API.Domain.Models;
-using Supermarket.API.Domain.Models.Queries;
-using Supermarket.API.Domain.Services;
-using Supermarket.API.Resources;
-using Supermarket.API.Persistence.Contexts;
+using supermarketapi.Domain.Models;
+using supermarketapi.Domain.Models.Queries;
+using supermarketapi.Domain.Services;
+using supermarketapi.Resources;
+using supermarketapi.Persistence.Contexts;
 
-namespace Supermarket.API.Controllers
+namespace supermarketapi.Controllers
 {
     [Route("/api/products")]
     [Produces("application/json")]

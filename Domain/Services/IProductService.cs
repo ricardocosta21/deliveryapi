@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
-using Supermarket.API.Domain.Models;
-using Supermarket.API.Domain.Models.Queries;
-using Supermarket.API.Domain.Services.Communication;
+using supermarketapi.Domain.Models;
+using supermarketapi.Domain.Models.Queries;
+using supermarketapi.Domain.Services.Communication;
 using System.Collections.Generic;
 
-namespace Supermarket.API.Domain.Services
+namespace supermarketapi.Domain.Services
 {
     public interface IProductService
     {

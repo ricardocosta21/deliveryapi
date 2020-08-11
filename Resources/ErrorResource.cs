@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Supermarket.API.Resources
+namespace supermarketapi.Resources
 {
     public class ErrorResource
     {

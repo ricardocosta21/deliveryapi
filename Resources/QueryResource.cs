@@ -1,4 +1,4 @@
-namespace Supermarket.API.Resources
+namespace supermarketapi.Resources
 {
     public class QueryResource
     {

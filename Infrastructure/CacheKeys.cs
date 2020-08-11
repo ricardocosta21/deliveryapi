@@ -1,4 +1,4 @@
-namespace Supermarket.API.Infrastructure
+namespace supermarketapi.Infrastructure
 {
     public enum CacheKeys
     {

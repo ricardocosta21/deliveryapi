@@ -1,17 +1,19 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 //using Microsoft.EntityFrameworkCore.InMemory.ValueGeneration.Internal;
-using Supermarket.API.Domain.Models;
+using supermarketapi.Domain.Models;
 using System.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
-namespace Supermarket.API.Persistence.Contexts
+namespace supermarketapi.Persistence.Contexts
 {
     public class AppDbContext : DbContext
     {
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<BasketProduct> BasketProducts { get; set; }
 
         //public DbSet<Stripe> Stripes { get; set; }
 

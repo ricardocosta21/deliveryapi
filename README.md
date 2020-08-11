@@ -40,7 +40,7 @@ If you want to download the original code showed on the tutorial, download the [
 
 ## How to Test
 
-First, install [.NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2). Then, open the terminal or command prompt at the API root path (```/src/Supermarket.API/```) and run the following commands, in sequence:
+First, install [.NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2). Then, open the terminal or command prompt at the API root path (```/src/supermarketapi/```) and run the following commands, in sequence:
 
 ```
 dotnet restore

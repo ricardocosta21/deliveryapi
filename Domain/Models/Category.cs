@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Supermarket.API.Domain.Models
+namespace supermarketapi.Domain.Models
 {
     public class Category
     {

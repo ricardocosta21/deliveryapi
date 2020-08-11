@@ -8,17 +8,17 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Supermarket.API.Controllers.Config;
-using Supermarket.API.Domain.Repositories;
-using Supermarket.API.Domain.Services;
-using Supermarket.API.Persistence.Contexts;
-using Supermarket.API.Persistence.Repositories;
-using Supermarket.API.Services;
+using supermarketapi.Controllers.Config;
+using supermarketapi.Domain.Repositories;
+using supermarketapi.Domain.Services;
+using supermarketapi.Persistence.Contexts;
+using supermarketapi.Persistence.Repositories;
+using supermarketapi.Services;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
 using Stripe;
 
-namespace Supermarket.API
+namespace supermarketapi
 {
     public class Startup
     {
@@ -61,10 +61,14 @@ namespace Supermarket.API
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IBasketProductRepository, BasketProductRepository>();
+
+
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, Services.ProductService>();
+            services.AddScoped<IBasketProductService, BasketProductService>();
 
             services.AddAutoMapper(typeof(Startup));
 

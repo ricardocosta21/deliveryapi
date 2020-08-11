@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using Supermarket.API.Persistence.Contexts;
+using supermarketapi.Persistence.Contexts;
 
-namespace Supermarket.API
+namespace supermarketapi
 {
     public class Program
     {

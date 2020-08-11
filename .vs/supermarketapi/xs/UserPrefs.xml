@@ -1,19 +1,19 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/CategoriesController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/Models/Product.cs">
     <Files>
-      <File FileName="Controllers/CategoriesController.cs" Line="3" Column="1" />
-      <File FileName="Services/CategoryService.cs" Line="16" Column="45" />
-      <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="10" Column="65" />
-      <File FileName="Domain/Models/Category.cs" Line="10" Column="33" />
-      <File FileName="Domain/Repositories/ICategoryRepository.cs" Line="15" Column="26" />
-      <File FileName="Domain/Services/ICategoryService.cs" Line="15" Column="41" />
-      <File FileName="Controllers/ProductsController.cs" Line="89" Column="28" NotebookId="1" />
-      <File FileName="Services/ProductService.cs" Line="132" Column="10" NotebookId="1" />
-      <File FileName="Domain/Services/IProductService.cs" Line="16" Column="34" NotebookId="1" />
-      <File FileName="Persistence/Repositories/ProductRepository.cs" Line="69" Column="1" NotebookId="1" />
-      <File FileName="Domain/Repositories/IProductRepository.cs" Line="17" Column="23" NotebookId="1" />
-      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="16" Column="53" NotebookId="1" />
-      <File FileName="Domain/Models/Product.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Controllers/CategoriesController.cs" Line="36" Column="43" />
+      <File FileName="Domain/Services/ICategoryService.cs" />
+      <File FileName="Services/CategoryService.cs" Line="12" Column="47" />
+      <File FileName="Domain/Repositories/ICategoryRepository.cs" />
+      <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="26" Column="31" />
+      <File FileName="Domain/Models/Category.cs" Line="7" Column="18" />
+      <File FileName="Domain/Models/Product.cs" Line="16" Column="2" />
+      <File FileName="Controllers/BasketController.cs" Line="49" Column="10" NotebookId="1" />
+      <File FileName="Domain/Services/IBasketService.cs" Line="16" Column="1" NotebookId="1" />
+      <File FileName="Services/BasketService.cs" Line="43" Column="34" NotebookId="1" />
+      <File FileName="Domain/Repositories/IBasketProductRepository.cs" Line="20" Column="1" NotebookId="1" />
+      <File FileName="Persistence/Repositories/BasketRepository.cs" Line="17" Column="51" NotebookId="1" />
+      <File FileName="Domain/Models/Basket.cs" Line="14" Column="41" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,18 +22,18 @@
             <Node name="supermarketapi" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Domain" expanded="True">
-                <Node name="Models" expanded="True" />
+                <Node name="Models" expanded="True">
+                  <Node name="BasketProduct.cs" selected="True" />
+                </Node>
                 <Node name="Repositories" expanded="True" />
+                <Node name="Services" expanded="True" />
               </Node>
               <Node name="Persistence" expanded="True">
                 <Node name="Contexts" expanded="True" />
                 <Node name="Repositories" expanded="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="CategoryService.cs" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>

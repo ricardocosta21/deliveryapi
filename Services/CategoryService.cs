@@ -2,16 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Caching.Memory;
-using Supermarket.API.Domain.Models;
-using Supermarket.API.Domain.Repositories;
-using Supermarket.API.Domain.Services;
-using Supermarket.API.Domain.Services.Communication;
-using Supermarket.API.Infrastructure;
-using Supermarket.API.Persistence.Contexts;
-using System.Data.SqlClient;
+using supermarketapi.Domain.Models;
+using supermarketapi.Domain.Repositories;
+using supermarketapi.Domain.Services;
 using Microsoft.Extensions.Configuration;
 
-namespace Supermarket.API.Services
+namespace supermarketapi.Services
 {
     public class CategoryService : ICategoryService
     {

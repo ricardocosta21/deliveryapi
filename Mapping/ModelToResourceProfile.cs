@@ -1,10 +1,10 @@
 using AutoMapper;
-using Supermarket.API.Domain.Models;
-using Supermarket.API.Domain.Models.Queries;
-using Supermarket.API.Extensions;
-using Supermarket.API.Resources;
+using supermarketapi.Domain.Models;
+using supermarketapi.Domain.Models.Queries;
+using supermarketapi.Extensions;
+using supermarketapi.Resources;
 
-namespace Supermarket.API.Mapping
+namespace supermarketapi.Mapping
 {
     public class ModelToResourceProfile : Profile
     {

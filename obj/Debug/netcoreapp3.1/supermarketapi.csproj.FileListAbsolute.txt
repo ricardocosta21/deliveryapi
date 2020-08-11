@@ -3,6 +3,7 @@
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/deliverydashboard/package-lock.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/deliverydashboard/package.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/deliverydashboard/public/manifest.json
+/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/mono_crash.175eeb7031.0.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/package.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/supermarketapi.deps.json
@@ -81,7 +82,6 @@
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
-/Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.csprojAssemblyReference.cache
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.AssemblyInfoInputs.cache
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.AssemblyInfo.cs
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.csproj.CoreCompileInputs.cache
@@ -95,3 +95,4 @@
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.xml
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.pdb
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.genruntimeconfig.cache
+/Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.csprojAssemblyReference.cache

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Supermarket.API.Resources
+namespace supermarketapi.Resources
 {
     public class SaveProductResource
     {

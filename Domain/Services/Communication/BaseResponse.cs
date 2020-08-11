@@ -1,4 +1,4 @@
-namespace Supermarket.API.Domain.Services.Communication
+namespace supermarketapi.Domain.Services.Communication
 {
     public abstract class BaseResponse<T>
     {

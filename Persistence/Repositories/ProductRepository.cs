@@ -3,12 +3,12 @@ using System.Linq;
 using System;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Supermarket.API.Domain.Models;
-using Supermarket.API.Domain.Models.Queries;
-using Supermarket.API.Domain.Repositories;
-using Supermarket.API.Persistence.Contexts;
+using supermarketapi.Domain.Models;
+using supermarketapi.Domain.Models.Queries;
+using supermarketapi.Domain.Repositories;
+using supermarketapi.Persistence.Contexts;
 
-namespace Supermarket.API.Persistence.Repositories
+namespace supermarketapi.Persistence.Repositories
 {
     public class ProductRepository : BaseRepository, IProductRepository
     {
@@ -23,7 +23,8 @@ namespace Supermarket.API.Persistence.Repositories
         {
             try
             {
-                IEnumerable<Product> products = await _context.Products.ToListAsync();
+                IList<Product> products = await _context.Products.ToListAsync();
+
                 return (from Product product in products
                         where product.CategoryId == categoryId
                         select product).ToList();
@@ -60,7 +61,7 @@ namespace Supermarket.API.Persistence.Repositories
         {
            foreach(var product in _context.Products)
             {
-                if(product.Id == categoryId)
+                if(product.CategoryId == categoryId)
                 {
                     _context.Products.Remove(product);
                 }               

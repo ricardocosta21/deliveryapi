@@ -1,9 +1,9 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Supermarket.API.Extensions;
-using Supermarket.API.Resources;
+using supermarketapi.Extensions;
+using supermarketapi.Resources;
 
-namespace Supermarket.API.Controllers.Config
+namespace supermarketapi.Controllers.Config
 {
     public static class InvalidModelStateResponseFactory
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Supermarket.API.Domain.Models.Queries
+namespace supermarketapi.Domain.Models.Queries
 {
     public class QueryResult<T>
     {

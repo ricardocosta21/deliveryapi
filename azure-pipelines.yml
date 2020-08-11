@@ -8,7 +8,7 @@ variables:
   imageName: 'ricardo21/testrepo20:$(build.buildNumber)'
 
 steps:
-- script: dotnet test Supermarket.API.Tests/Supermarket.API.Tests.csproj --logger trx
+- script: dotnet test supermarketapi.Tests/supermarketapi.Tests.csproj --logger trx
   displayName: Run unit tests
 - task: PublishTestResults@2
   condition: succeededOrFailed()
