@@ -74,7 +74,7 @@ namespace supermarketapi.Controllers
             // people from directly manipulating the amount on the client
             
 
-            return basketProducts.Sum(x => x.Price);
+            return basketProducts.Sum(x => x.Price * 100);
         }
 
 
