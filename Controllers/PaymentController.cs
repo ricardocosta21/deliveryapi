@@ -10,10 +10,11 @@ using System.Data.SqlClient;
 using supermarketapi.Persistence.Contexts;
 using Microsoft.Extensions.Configuration;
 using Stripe;
+using System.Linq;
 
 namespace supermarketapi.Controllers
 {
-    [Route("/api/create-payment-intent")]
+    [Route("/api/pay")]
     [Produces("application/json")]
     [ApiController]
     public class PaymentController : Controller
@@ -26,24 +27,23 @@ namespace supermarketapi.Controllers
             StripeConfiguration.ApiKey = _configuration["Stripe:SecretKey"];
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
 
-        
 
         [HttpPost]
-        //public IActionResult Post([FromBody] StripeCharge request)
-        public IActionResult Post()
+        public IActionResult Post([FromBody]IEnumerable<BasketProduct> basketProducts)
         {
-            var total = "0";
+            //var total = "0";
             var paymentIntents = new PaymentIntentService();
             var paymentIntent = paymentIntents.Create(new PaymentIntentCreateOptions
             {
-                Amount = CalculateOrderAmount(total),
+                Amount = CalculateOrderAmount(basketProducts),
                 Currency = "gbp",
+                Metadata = new Dictionary<string, string>
+                {
+                    {"OrderId", "6735"},
+                },
             });
+
             //var paymentIntent = paymentIntents.Create(new PaymentIntentCreateOptions
             //{
             //    Amount = 1099,
@@ -67,12 +67,14 @@ namespace supermarketapi.Controllers
 
         }
 
-        private int CalculateOrderAmount(string items)
+        private int CalculateOrderAmount(IEnumerable<BasketProduct>  basketProducts)
         {
             // Replace this constant with a calculation of the order's amount
             // Calculate the order total on the server to prevent
             // people from directly manipulating the amount on the client
-            return 1400;
+            
+
+            return basketProducts.Sum(x => x.Price);
         }
 
 
