@@ -1,19 +1,21 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|supermarketapi">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/Repositories/IProductRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
     <Files>
-      <File FileName="Controllers/CategoriesController.cs" Line="38" Column="1" />
+      <File FileName="Controllers/CategoriesController.cs" Line="76" Column="62" />
       <File FileName="Services/CategoryService.cs" Line="95" Column="1" />
       <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="54" Column="46" />
       <File FileName="Controllers/ProductsController.cs" Line="92" Column="35" />
-      <File FileName="Services/ProductService.cs" Line="15" Column="44" />
-      <File FileName="Persistence/Repositories/ProductRepository.cs" Line="58" Column="10" />
+      <File FileName="Domain/Services/IProductService.cs" Line="16" Column="39" />
+      <File FileName="Services/ProductService.cs" Line="110" Column="33" />
+      <File FileName="Domain/Repositories/IProductRepository.cs" Line="16" Column="28" />
+      <File FileName="Persistence/Repositories/ProductRepository.cs" Line="66" Column="12" />
       <File FileName="Domain/Models/Product.cs" Line="1" Column="1" />
-      <File FileName="Domain/Repositories/IProductRepository.cs" Line="16" Column="9" />
-      <File FileName="Domain/Services/IProductService.cs" Line="15" Column="49" />
-      <File FileName="Controllers/BasketController.cs" Line="59" Column="52" NotebookId="1" />
+      <File FileName="Controllers/BasketController.cs" Line="30" Column="10" NotebookId="1" />
       <File FileName="Domain/Services/IBasketService.cs" NotebookId="1" />
       <File FileName="Services/BasketService.cs" Line="1" Column="1" NotebookId="1" />
       <File FileName="Domain/Repositories/IBasketProductRepository.cs" NotebookId="1" />
+      <File FileName="Startup.cs" Line="58" Column="84" NotebookId="1" />
+      <File FileName="appsettings.json" Line="17" Column="21" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -31,9 +33,8 @@
                 <Node name="Repositories" expanded="True" />
               </Node>
               <Node name="Resources" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="ProductService.cs" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
