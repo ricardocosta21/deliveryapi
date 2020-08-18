@@ -18,14 +18,14 @@ namespace supermarketapi.Controllers
     public class CategoriesController : Controller
     {
         private readonly ICategoryService _categoryService;
-        
+
 
         private AppDbContext _context;
 
         public CategoriesController(ICategoryService categoryService, AppDbContext context)
         {
             _categoryService = categoryService;
-            _context = context;            
+            _context = context;
         }
 
         /// <summary>
@@ -35,8 +35,15 @@ namespace supermarketapi.Controllers
         [HttpGet]
         public async Task<IEnumerable<Category>> GetAllAsync()
         {
-            return await _categoryService.ListAsync();            
+            return await _categoryService.ListAsync();
         }
+
+        [HttpGet("{clientUID}")]
+        public async Task<IEnumerable<Category>> GetAllAsyncByClientUID(string clientUID)
+        {
+            return await _categoryService.ListAsync(clientUID);
+        }
+
 
         /// <summary>
         /// Lists all categories.
@@ -91,17 +98,17 @@ namespace supermarketapi.Controllers
         [HttpDelete]
         [ProducesResponseType(typeof(bool), 200)]
         [ProducesResponseType(typeof(ErrorResource), 400)]
-        public async Task<bool> DeleteAsync(int id)
+        public async Task<bool> DeleteAsync([FromBody] Category category)
         {
-            return await _categoryService.DeleteAsync(id);
+            return await _categoryService.DeleteAsync(category);
         }
 
-        [HttpDelete("all")]
-        [ProducesResponseType(typeof(bool), 200)]
-        [ProducesResponseType(typeof(ErrorResource), 400)]
-        public async Task<bool> DeleteAllAsync()
-        {
-            return await _categoryService.DeleteAllAsync();
-        }
+        //[HttpDelete("all")]
+        //[ProducesResponseType(typeof(bool), 200)]
+        //[ProducesResponseType(typeof(ErrorResource), 400)]
+        //public async Task<bool> DeleteAllAsync()
+        //{
+        //    return await _categoryService.DeleteAllAsync();
+        //}
     }
 }

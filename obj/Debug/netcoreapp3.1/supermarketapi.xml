@@ -27,14 +27,14 @@
             <param name="newName">Updated category.name data.</param>
             <returns>Response for the request.</returns>
         </member>
-        <member name="M:supermarketapi.Controllers.CategoriesController.DeleteAsync(System.Int32)">
+        <member name="M:supermarketapi.Controllers.CategoriesController.DeleteAsync(supermarketapi.Domain.Models.Category)">
             <summary>
             Deletes a given category according to an identifier.
             </summary>
             <param name="id">Category identifier.</param>
             <returns>Response for the request.</returns>
         </member>
-        <member name="M:supermarketapi.Controllers.ProductsController.GetProductsListAsync(System.Int32)">
+        <member name="M:supermarketapi.Controllers.ProductsController.GetProductsListAsync(System.Int32,System.String)">
             <summary>
             Lists all existing products.
             </summary>

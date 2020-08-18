@@ -8,11 +8,12 @@ namespace supermarketapi.Domain.Services
     public interface ICategoryService
     {
         //Task<List<Category>> ListAsync();
-         Task<IEnumerable<Category>> ListAsync();
+        Task<IEnumerable<Category>> ListAsync();
+        Task<IEnumerable<Category>> ListAsync(string clientUID);
          Task<Category> ListItemAsync(int id);
          Task<bool> AddAsync(Category category);
          Task<bool> UpdateAsync(Category category, string newName);
-         Task<bool> DeleteAsync(int id);
-         Task<bool> DeleteAllAsync();
+         Task<bool> DeleteAsync(Category category);
+         //Task<bool> DeleteAllAsync();
     }
 }

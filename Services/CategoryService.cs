@@ -6,6 +6,7 @@ using supermarketapi.Domain.Models;
 using supermarketapi.Domain.Repositories;
 using supermarketapi.Domain.Services;
 using Microsoft.Extensions.Configuration;
+using System.Linq;
 
 namespace supermarketapi.Services
 {
@@ -29,6 +30,11 @@ namespace supermarketapi.Services
         public async Task<IEnumerable<Category>> ListAsync()
         {
             return await _categoryRepository.ListAsync();
+        }
+
+        public async Task<IEnumerable<Category>> ListAsync(string clientUID)
+        {
+            return await _categoryRepository.ListAsync(clientUID);
         }
 
         public async Task<Category> ListItemAsync(int id)
@@ -75,44 +81,48 @@ namespace supermarketapi.Services
         }
 
         // Working
-        public async Task<bool> DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(Category category)
         {
-            var existingCategory = await _categoryRepository.FindByIdAsync(id);
+            //var existingCategory = await _categoryRepository.FindByIdAsync(category.Id);
 
-            if (existingCategory == null)
+            if (category == null)
                 return false;
 
-            try
+            if (category.ClientUID == category.ClientUID)
             {
-                 _categoryRepository.Remove(existingCategory);
+                try
+                {
 
-                _productRepository.RemoveList(id);
+                    _categoryRepository.Remove(category);
 
-                 await _unitOfWork.CompleteAsync();
+                    await _unitOfWork.CompleteAsync();
 
-                return true;
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    // Do some logging stuff
+                    return false;
+                }
             }
-            catch (Exception ex)
-            {
-                // Do some logging stuff
-                return false;
-            }
+
+            return false;
         }
 
-        public async Task<bool> DeleteAllAsync()
-        {
-            try
-            {
-                _categoryRepository.RemoveAll();
-                await _unitOfWork.CompleteAsync();
+        //public async Task<bool> DeleteAllAsync()
+        //{
+        //    try
+        //    {
+        //        _categoryRepository.RemoveAll();
+        //        await _unitOfWork.CompleteAsync();
 
-                return true;
-            }
-            catch (Exception ex)
-            {
-                // Do some logging stuff
-                return false;
-            }
-        }
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Do some logging stuff
+        //        return false;
+        //    }
+        //}
     }
 }

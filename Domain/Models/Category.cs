@@ -9,7 +9,7 @@ namespace supermarketapi.Domain.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key, Column(Order = 0)]
         public int Id { get; set; }
+        public string ClientUID { get; set; }
         public string Name { get; set; }
-        public IList<Product> Products { get; set; } = new List<Product>();
     }
 }

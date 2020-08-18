@@ -19,11 +19,11 @@ namespace supermarketapi.Persistence.Repositories
             return await _context.Products.ToListAsync();
         }
 
-        public async Task<IEnumerable<Product>> ListProductsListAsync(int categoryId)
+        public async Task<IEnumerable<Product>> ListProductsListAsync(int categoryId, string clientUID)
         {
             try
             {
-                IList<Product> products = await _context.Products.ToListAsync();
+                IList<Product> products = await _context.Products.Where(x => x.ClientUID == clientUID).ToListAsync();
 
                 return (from Product product in products
                         where product.CategoryId == categoryId
@@ -57,23 +57,12 @@ namespace supermarketapi.Persistence.Repositories
             _context.Products.Remove(product);
         }
 
-        public void RemoveList(int categoryId)
-        {
-           foreach(var product in _context.Products)
-            {
-                if(product.CategoryId == categoryId)
-                {
-                    _context.Products.Remove(product);
-                }               
-            }
-        }
-
-        public void RemoveAll()
-        {
-            foreach (var product in _context.Products)
-            {
-                _context.Products.Remove(product);   
-            }
-        }
+        //public void RemoveAll()
+        //{
+        //    foreach (var product in _context.Products)
+        //    {
+        //        _context.Products.Remove(product);   
+        //    }
+        //}
     }
 }

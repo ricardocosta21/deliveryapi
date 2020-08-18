@@ -29,14 +29,6 @@ namespace supermarketapi.Controllers
             _context = context;
         }
 
-        
-
-        //[HttpGet]
-        //public async Task<IEnumerable<BasketProduct>> GetAsync()
-        //{
-        //    return await _basketService.ListAsync();
-        //}
-
         [HttpGet]
         public async Task<IEnumerable<BasketProduct>> GetBasketProductAsync(string clientUID)
         {

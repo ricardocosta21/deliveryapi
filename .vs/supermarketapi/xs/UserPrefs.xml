@@ -1,28 +1,19 @@
-﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|supermarketapi">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/Repositories/IProductRepository.cs">
     <Files>
-      <File FileName="Controllers/CategoriesController.cs" Line="67" Column="43" />
-      <File FileName="Domain/Services/ICategoryService.cs" />
-      <File FileName="Services/CategoryService.cs" />
-      <File FileName="Domain/Repositories/ICategoryRepository.cs" />
-      <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="32" Column="22" />
-      <File FileName="Domain/Models/Category.cs" />
-      <File FileName="Domain/Models/Product.cs" />
-      <File FileName="Persistence/Repositories/ProductRepository.cs" Line="2" Column="1" />
+      <File FileName="Controllers/CategoriesController.cs" Line="38" Column="1" />
+      <File FileName="Services/CategoryService.cs" Line="95" Column="1" />
+      <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="54" Column="46" />
+      <File FileName="Controllers/ProductsController.cs" Line="92" Column="35" />
+      <File FileName="Services/ProductService.cs" Line="15" Column="44" />
+      <File FileName="Persistence/Repositories/ProductRepository.cs" Line="58" Column="10" />
+      <File FileName="Domain/Models/Product.cs" Line="1" Column="1" />
+      <File FileName="Domain/Repositories/IProductRepository.cs" Line="16" Column="9" />
+      <File FileName="Domain/Services/IProductService.cs" Line="15" Column="49" />
       <File FileName="Controllers/BasketController.cs" Line="59" Column="52" NotebookId="1" />
       <File FileName="Domain/Services/IBasketService.cs" NotebookId="1" />
-      <File FileName="Services/BasketService.cs" NotebookId="1" />
-      <File FileName="Domain/Repositories/IBasketProductRepository.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Domain/Models/StripeCharge.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Controllers/PaymentController.cs" Line="68" Column="10" NotebookId="1" />
-      <File FileName="Controllers/ProductsController.cs" Line="13" Column="5" NotebookId="1" />
-      <File FileName="deliverydashboard/Dockerfile" Line="24" Column="1" NotebookId="1" />
-      <File FileName="appsettings.json" Line="13" Column="1" NotebookId="1" />
-      <File FileName="deliverydashboard/src/views/restapi/RestAPI.js" Line="110" Column="58" NotebookId="1" />
-      <File FileName="Startup.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="StripeSettings.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Program.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="docker-compose.yml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Services/BasketService.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Domain/Repositories/IBasketProductRepository.cs" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -40,10 +31,16 @@
                 <Node name="Repositories" expanded="True" />
               </Node>
               <Node name="Resources" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
+              <Node name="Services" expanded="True">
+                <Node name="ProductService.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>clientUID</Value>
         </State>
       </Pad>
     </Pads>

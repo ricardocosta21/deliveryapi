@@ -37,12 +37,12 @@ namespace supermarketapi.Services
                 return await _productRepository.ListAsync();
             
         }
-        public async Task<IEnumerable<Product>> ListProductsListAsync(int categoryId)
+        public async Task<IEnumerable<Product>> ListProductsListAsync(int categoryId, string clientUID)
         {
             // Here I list the query result from cache if they exist, but now the data can vary according to the category ID, page and amount of
             // items per page. I have to compose a cache to avoid returning wrong data.
 
-            return await _productRepository.ListProductsListAsync(categoryId);
+            return await _productRepository.ListProductsListAsync(categoryId, clientUID);
         }
         
 
@@ -115,20 +115,20 @@ namespace supermarketapi.Services
         }
 
         
-        public async Task<bool> DeleteAllAsync()
-        {                      
-            try
-            {
-                _productRepository.RemoveAll();
-                await _unitOfWork.CompleteAsync();
+        //public async Task<bool> DeleteAllAsync()
+        //{                      
+        //    try
+        //    {
+        //        _productRepository.RemoveAll();
+        //        await _unitOfWork.CompleteAsync();
 
-                return true;
-            }
-            catch (Exception ex)
-            {
-                // Do some logging stuff
-                return false;
-            }
-        }
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Do some logging stuff
+        //        return false;
+        //    }
+        //}
     }
 }

@@ -40,9 +40,9 @@ namespace supermarketapi.Controllers
         
         [ProducesResponseType(typeof(bool), 201)]
         [ProducesResponseType(typeof(ErrorResource), 400)]
-        public async Task<IEnumerable<Product>> GetProductsListAsync(int categoryId)
+        public async Task<IEnumerable<Product>> GetProductsListAsync(int categoryId, string clientUID)
         {
-            return await _productService.ListProductsListAsync(categoryId);
+            return await _productService.ListProductsListAsync(categoryId, clientUID);
         }
 
         /// <summary>
@@ -86,12 +86,12 @@ namespace supermarketapi.Controllers
             return await _productService.DeleteAsync(product);
         }
 
-        [HttpDelete("all")]
-        [ProducesResponseType(typeof(bool), 200)]
-        [ProducesResponseType(typeof(ErrorResource), 400)]
-        public async Task<bool> DeleteAllAsync()
-        {
-            return await _productService.DeleteAllAsync();
-        }
+        //[HttpDelete("all")]
+        //[ProducesResponseType(typeof(bool), 200)]
+        //[ProducesResponseType(typeof(ErrorResource), 400)]
+        //public async Task<bool> DeleteAllAsync()
+        //{
+        //    return await _productService.DeleteAllAsync();
+        //}
     }
 }
