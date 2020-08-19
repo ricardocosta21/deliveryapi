@@ -57,12 +57,24 @@ namespace supermarketapi.Persistence.Repositories
             _context.Products.Remove(product);
         }
 
-        //public void RemoveAll()
-        //{
-        //    foreach (var product in _context.Products)
-        //    {
-        //        _context.Products.Remove(product);   
-        //    }
-        //}
+        public async Task<bool> RemoveAll(int categoryId, string clientUID)
+        {
+            try
+            {
+                var products = await _context.Products.Where(p => p.CategoryId == categoryId && p.ClientUID == clientUID).ToListAsync();
+
+                foreach (var product in products)
+                {
+                    _context.Products.Remove(product);
+                }
+                return true;
+            }
+
+            catch(Exception ex)
+            {
+                return false;
+            }
+           
+        }
     }
 }

@@ -13,6 +13,6 @@ namespace supermarketapi.Domain.Repositories
         Task AddAsync(Product product);
         void Update(Product product);
         void Remove(Product product);
-        //void RemoveAll();
+        Task<bool> RemoveAll(int categoryId, string clientUID);
     }
 }
