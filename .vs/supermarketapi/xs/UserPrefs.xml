@@ -1,29 +1,28 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|supermarketapi">
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Repositories/CategoryRepository.cs">
     <Files>
-      <File FileName="Controllers/CategoriesController.cs" Line="13" Column="37" />
-      <File FileName="Services/CategoryService.cs" Line="85" Column="10" />
-      <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="54" Column="46" />
-      <File FileName="Controllers/ProductsController.cs" Line="92" Column="35" />
-      <File FileName="Domain/Services/IProductService.cs" Line="16" Column="39" />
-      <File FileName="Services/ProductService.cs" Line="115" Column="10" />
-      <File FileName="Domain/Repositories/IProductRepository.cs" Line="18" Column="2" />
-      <File FileName="Persistence/Repositories/ProductRepository.cs" Line="78" Column="1" />
-      <File FileName="Domain/Models/Product.cs" Line="1" Column="1" />
+      <File FileName="Controllers/CategoriesController.cs" Line="4" Column="32" />
+      <File FileName="Services/CategoryService.cs" />
+      <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="3" Column="36" />
+      <File FileName="Controllers/ProductsController.cs" />
+      <File FileName="Domain/Services/IProductService.cs" />
+      <File FileName="Services/ProductService.cs" />
+      <File FileName="Domain/Repositories/IProductRepository.cs" />
+      <File FileName="Persistence/Repositories/ProductRepository.cs" />
+      <File FileName="Domain/Models/Product.cs" />
       <File FileName="Controllers/BasketController.cs" Line="30" Column="10" NotebookId="1" />
       <File FileName="Domain/Services/IBasketService.cs" NotebookId="1" />
       <File FileName="Services/BasketService.cs" NotebookId="1" />
       <File FileName="Domain/Repositories/IBasketProductRepository.cs" NotebookId="1" />
-      <File FileName="Startup.cs" Line="44" Column="41" NotebookId="1" />
-      <File FileName="Controllers/PaymentController.cs" Line="27" Column="65" NotebookId="1" />
-      <File FileName="appsettings.json" Line="17" Column="21" NotebookId="1" />
+      <File FileName="Startup.cs" NotebookId="1" />
+      <File FileName="Controllers/PaymentController.cs" NotebookId="1" />
+      <File FileName="appsettings.json" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="supermarketapi" expanded="True">
             <Node name="supermarketapi" expanded="True">
-              <Node name="Controllers" expanded="True" />
               <Node name="Domain" expanded="True">
                 <Node name="Models" expanded="True">
                   <Node name="Queries" expanded="True" />
@@ -45,9 +44,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.supermarketapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="../../../Controllers/PaymentController.cs" line="36" column="34" endLine="36" endColumn="85" offsetX="-1" offsetY="-1" expression="basketProducts" liveUpdate="False" />
-  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
