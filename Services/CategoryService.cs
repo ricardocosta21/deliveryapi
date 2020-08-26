@@ -92,7 +92,8 @@ namespace supermarketapi.Services
             {
                 try
                 {
-                    //var isSucceess = await _productRepository.RemoveAll(category.Id,category.ClientUID);
+                    //uncommented will work on AWS RDS
+                    var isSucceess = await _productRepository.RemoveAll(category.Id,category.ClientUID);
 
                     _categoryRepository.Remove(category);
 
