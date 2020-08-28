@@ -92,8 +92,8 @@ jobs:
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: ecrtaskdefinition.json
-        container-name: deliveryapi
+        task-definition: ecs-task-Test1.json
+        container-name: supermarketapi
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
@@ -101,5 +101,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: app-service
-        cluster: deliveryapi
+        cluster: supermarketapi
         wait-for-service-stability: true
