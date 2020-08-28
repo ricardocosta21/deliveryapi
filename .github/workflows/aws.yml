@@ -53,7 +53,7 @@ jobs:
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
       env:
-        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        ECR_REGISTRY: 367495629778.dkr.ecr.us-east-2.amazonaws.com/ricardo21/
         ECR_REPOSITORY: supermarketapi
         IMAGE_TAG: v1
       run: |
