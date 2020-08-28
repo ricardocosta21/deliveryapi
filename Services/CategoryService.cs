@@ -85,6 +85,8 @@ namespace supermarketapi.Services
         {
             //var existingCategory = await _categoryRepository.FindByIdAsync(category.Id);
 
+            //ecr test 1
+
             if (category == null)
                 return false;
 
