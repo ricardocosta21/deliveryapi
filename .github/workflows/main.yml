@@ -9,7 +9,7 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@2.11
       with:
         # The name of the image you would like to push
-        name: ricardo21/deliveryapi:v1
+        name: ricardo21/supermarketapi:v1
         # The login username for the registry
         username: ${{ secrets.DOCKERHUB_USER }}
         # The login password for the registry
