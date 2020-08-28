@@ -101,5 +101,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: app-service
-        cluster: supermarketapi
+        cluster: ecs-cluster16
         wait-for-service-stability: true
