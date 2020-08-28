@@ -80,7 +80,7 @@ jobs:
       env:
         ECR_REGISTRY: 367495629778.dkr.ecr.us-east-2.amazonaws.com/ricardo21
         ECR_REPOSITORY: supermarketapi
-        IMAGE_TAG: v1
+        IMAGE_TAG: latest
       run: |
         # Build a docker container and
         # push it to ECR so that it can
