@@ -1,22 +1,24 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|supermarketapi">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Services/CategoryService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
     <Files>
       <File FileName="Controllers/CategoriesController.cs" Line="29" Column="10" />
-      <File FileName="Services/CategoryService.cs" Line="87" Column="1" />
+      <File FileName="Services/CategoryService.cs" Line="89" Column="1" />
       <File FileName="Persistence/Repositories/CategoryRepository.cs" />
-      <File FileName="Controllers/ProductsController.cs" />
+      <File FileName="Controllers/ProductsController.cs" Line="1" Column="1" />
       <File FileName="Domain/Services/IProductService.cs" />
-      <File FileName="Services/ProductService.cs" />
+      <File FileName="Services/ProductService.cs" Line="1" Column="1" />
       <File FileName="Domain/Repositories/IProductRepository.cs" />
-      <File FileName="Persistence/Repositories/ProductRepository.cs" />
-      <File FileName="Domain/Models/Product.cs" />
+      <File FileName="Persistence/Repositories/ProductRepository.cs" Line="1" Column="1" />
+      <File FileName="Domain/Models/Product.cs" Line="1" Column="1" />
+      <File FileName="StripeSettings.cs" Line="1" Column="1" />
       <File FileName="Controllers/BasketController.cs" Line="30" Column="10" NotebookId="1" />
       <File FileName="Domain/Services/IBasketService.cs" NotebookId="1" />
       <File FileName="Services/BasketService.cs" NotebookId="1" />
       <File FileName="Domain/Repositories/IBasketProductRepository.cs" NotebookId="1" />
-      <File FileName="Startup.cs" NotebookId="1" />
+      <File FileName="Startup.cs" Line="1" Column="1" NotebookId="1" />
       <File FileName="Controllers/PaymentController.cs" NotebookId="1" />
-      <File FileName="appsettings.json" NotebookId="1" />
+      <File FileName="appsettings.json" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Program.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
