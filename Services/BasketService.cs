@@ -6,7 +6,7 @@ using supermarketapi.Domain.Models;
 using supermarketapi.Domain.Repositories;
 using supermarketapi.Domain.Services;
 using Microsoft.Extensions.Configuration;
-
+using System.Linq;
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace supermarketapi.Services
@@ -44,9 +44,50 @@ namespace supermarketapi.Services
         {
             try
             {
-                //Add here clientUID to bProduct. Nope. add on the Client, just before api request
-                _basketRepository.Add(bProduct);
+                var existingBasketProduct = await _basketRepository.FindByIdAsync(bProduct.Id);
+
+                if (existingBasketProduct == null)
+                {
+                    _basketRepository.Add(bProduct);
+                }
+                else
+                {
+                    existingBasketProduct.Quantity++;
+                    _basketRepository.Update(existingBasketProduct);
+                }
+                
                 await _unitOfWork.CompleteAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                // Do some logging stuff
+                return false;
+            }
+        }
+
+        public async Task<bool> DecrementAsync(int bProductId)
+        {
+            var existingBasketProduct = await _basketRepository.FindByIdAsync(bProductId);
+
+            if (existingBasketProduct == null)
+                return false;
+
+            try
+            {
+                if (existingBasketProduct.Quantity == 1)
+                {
+                    //removes item from list
+                    _basketRepository.Remove(existingBasketProduct);
+                }
+                else
+                {
+                    existingBasketProduct.Quantity--;
+                    _basketRepository.Update(existingBasketProduct);
+                }
+
+                await _unitOfWork.CompleteAsync();
+
                 return true;
             }
             catch (Exception ex)

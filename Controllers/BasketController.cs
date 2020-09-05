@@ -43,6 +43,14 @@ namespace supermarketapi.Controllers
             return await _basketService.AddAsync(bProduct);
         }
 
+        [HttpPut]
+        [ProducesResponseType(typeof(bool), 200)]
+        [ProducesResponseType(typeof(ErrorResource), 400)]
+        public async Task<bool> PutAsync(int id)
+        {
+            return await _basketService.DecrementAsync(id);
+        }
+
         [HttpDelete]
         [ProducesResponseType(typeof(bool), 200)]
         [ProducesResponseType(typeof(ErrorResource), 400)]

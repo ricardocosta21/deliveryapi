@@ -51,10 +51,10 @@ namespace supermarketapi.Persistence.Repositories
             return await _context.BasketProducts.FindAsync(id);
         }
 
-        //public void Update(Category basket)
-        //{
-        //    _context.BasketProduct.Update(basket);
-        //}
+        public void Update(BasketProduct bProduct)
+        {
+            _context.BasketProducts.Update(bProduct);
+        }
 
         public void Remove(BasketProduct bProduct)
         {

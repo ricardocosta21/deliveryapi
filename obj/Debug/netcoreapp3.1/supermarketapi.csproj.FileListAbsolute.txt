@@ -96,3 +96,4 @@
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.pdb
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.genruntimeconfig.cache
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.csprojAssemblyReference.cache
+/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/ecs-task-def.json

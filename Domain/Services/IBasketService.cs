@@ -15,6 +15,10 @@ namespace supermarketapi.Domain.Services
         //Task<Product> ListBasketProductsAsync(int clientId);
         Task<bool> AddAsync(BasketProduct bProduct);
 
+        //Task<bool> IncrementAsync(int bProductId);
+
+        Task<bool> DecrementAsync(int bProductId);
+
         Task<bool> Remove(int bProductId);
         //Task<bool> UpdateAsync(Category category, string newName);
         //Task<bool> DeleteAsync(int id);
