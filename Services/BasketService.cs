@@ -48,6 +48,7 @@ namespace supermarketapi.Services
 
                 if (existingBasketProduct == null)
                 {
+                    bProduct.Quantity = 1;
                     _basketRepository.Add(bProduct);
                 }
                 else

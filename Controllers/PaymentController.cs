@@ -27,8 +27,6 @@ namespace supermarketapi.Controllers
             StripeConfiguration.ApiKey = _configuration["Stripe:SecretKey"];
         }
 
-
-
         [HttpPost]
         public IActionResult Post([FromBody]IEnumerable<BasketProduct> basketProducts)
         {
@@ -64,7 +62,6 @@ namespace supermarketapi.Controllers
             //Charge stripeCharge = service.Create(myCharge);
 
             return Json(new { clientSecret = paymentIntent.ClientSecret });
-
         }
 
         private int CalculateOrderAmount(IEnumerable<BasketProduct>  basketProducts)
@@ -72,11 +69,8 @@ namespace supermarketapi.Controllers
             // Replace this constant with a calculation of the order's amount
             // Calculate the order total on the server to prevent
             // people from directly manipulating the amount on the client
-            
-
-            return basketProducts.Sum(x => x.Price * 100);
+            return basketProducts.Sum(x => x.Price * x.Quantity * 100);
         }
-
 
     }
    

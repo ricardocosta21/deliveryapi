@@ -1,25 +1,25 @@
 ﻿<Properties StartupConfiguration="{41F21815-0A23-4918-8AC5-CF9939959BFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Contexts/AppDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/PaymentController.cs">
     <Files>
       <File FileName="Controllers/CategoriesController.cs" Line="88" Column="42" />
-      <File FileName="Services/CategoryService.cs" Line="13" Column="44" />
-      <File FileName="Persistence/Repositories/CategoryRepository.cs" Line="25" Column="1" />
-      <File FileName="Controllers/ProductsController.cs" Line="58" Column="60" />
-      <File FileName="Services/ProductService.cs" />
-      <File FileName="Domain/Services/ICategoryService.cs" Line="8" Column="22" />
-      <File FileName="Domain/Repositories/ICategoryRepository.cs" Line="14" Column="9" />
-      <File FileName="Domain/Models/Product.cs" Line="13" Column="39" />
-      <File FileName="Controllers/BasketController.cs" Line="44" Column="10" NotebookId="1" />
-      <File FileName="Domain/Services/IBasketService.cs" Line="18" Column="53" NotebookId="1" />
-      <File FileName="Services/BasketService.cs" Line="67" Column="10" NotebookId="1" />
-      <File FileName="Persistence/Repositories/BasketProductRepository.cs" Line="37" Column="10" NotebookId="1" />
-      <File FileName="Domain/Repositories/IBasketProductRepository.cs" Line="11" Column="6" NotebookId="1" />
-      <File FileName="Controllers/PaymentController.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="appsettings.json" Line="18" Column="7" NotebookId="1" />
-      <File FileName="Domain/Models/BasketProduct.cs" Line="19" Column="2" NotebookId="1" />
-      <File FileName="Program.cs" Line="24" Column="1" NotebookId="1" />
-      <File FileName="Startup.cs" Line="53" Column="73" NotebookId="1" />
-      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="29" Column="70" NotebookId="1" />
+      <File FileName="Services/CategoryService.cs" />
+      <File FileName="Persistence/Repositories/CategoryRepository.cs" />
+      <File FileName="Controllers/ProductsController.cs" />
+      <File FileName="Services/ProductService.cs" Line="62" Column="14" />
+      <File FileName="Domain/Services/ICategoryService.cs" />
+      <File FileName="Domain/Repositories/ICategoryRepository.cs" />
+      <File FileName="Domain/Models/Product.cs" />
+      <File FileName="Controllers/BasketController.cs" Line="50" Column="10" NotebookId="1" />
+      <File FileName="Domain/Services/IBasketService.cs" NotebookId="1" />
+      <File FileName="Services/BasketService.cs" Line="56" Column="54" NotebookId="1" />
+      <File FileName="Persistence/Repositories/BasketProductRepository.cs" NotebookId="1" />
+      <File FileName="Domain/Repositories/IBasketProductRepository.cs" NotebookId="1" />
+      <File FileName="Controllers/PaymentController.cs" Line="78" Column="17" NotebookId="1" />
+      <File FileName="appsettings.json" NotebookId="1" />
+      <File FileName="Domain/Models/BasketProduct.cs" NotebookId="1" />
+      <File FileName="Program.cs" NotebookId="1" />
+      <File FileName="Startup.cs" NotebookId="1" />
+      <File FileName="Persistence/Contexts/AppDbContext.cs" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -39,7 +39,7 @@
               </Node>
               <Node name="Resources" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
+              <Node name="StripeSettings.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -52,6 +52,10 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/ricardocosta/development/core/deliveryAPI/supermarketapi.sln" relfile="supermarketapi.sln" line="18" column="1" />
+      <Breakpoint file="/Users/ricardocosta/development/core/deliveryAPI/Persistence/Repositories/BasketProductRepository.cs" relfile="Persistence/Repositories/BasketProductRepository.cs" line="56" column="1" />
+      <Breakpoint file="/Users/ricardocosta/development/core/deliveryAPI/Controllers/PaymentController.cs" relfile="Controllers/PaymentController.cs" line="79" column="1" />
+      <Breakpoint file="/Users/ricardocosta/development/core/deliveryAPI/Controllers/PaymentController.cs" relfile="Controllers/PaymentController.cs" line="83" column="1" />
+      <Breakpoint file="/Users/ricardocosta/development/core/deliveryAPI/Controllers/PaymentController.cs" relfile="Controllers/PaymentController.cs" line="71" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
