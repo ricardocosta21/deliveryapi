@@ -23,7 +23,6 @@ namespace supermarketapi.Services
         public ProductService(IProductRepository productRepository, IUnitOfWork unitOfWork, IMemoryCache cache, IConfiguration config)
         {
             _productRepository = productRepository;
-            
             _unitOfWork = unitOfWork;
             _cache = cache;
             _configuration = config;
@@ -113,22 +112,5 @@ namespace supermarketapi.Services
                 return false;
             }
         }
-
-        
-        //public async Task<bool> DeleteAllAsync()
-        //{                      
-        //    try
-        //    {
-        //        _productRepository.RemoveAll();
-        //        await _unitOfWork.CompleteAsync();
-
-        //        return true;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        // Do some logging stuff
-        //        return false;
-        //    }
-        //}
     }
 }

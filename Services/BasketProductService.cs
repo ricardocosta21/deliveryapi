@@ -13,7 +13,7 @@ namespace supermarketapi.Services
 {
     public class BasketProductService : IBasketProductService
     {
-        private readonly IBasketProductRepository _basketRepository;
+        private readonly IBasketProductRepository _basketProductRepository;
         private readonly ICategoryRepository _categoryRepository;
         private readonly IProductRepository _productRepository;
         
@@ -21,9 +21,9 @@ namespace supermarketapi.Services
         private readonly IMemoryCache _cache;
         private readonly IConfiguration _configuration;
 
-        public BasketProductService(IBasketProductRepository basketRepository, IProductRepository productRepository, IUnitOfWork unitOfWork, IMemoryCache cache, IConfiguration config)
+        public BasketProductService(IBasketProductRepository basketProductRepository, IProductRepository productRepository, IUnitOfWork unitOfWork, IMemoryCache cache, IConfiguration config)
         {
-            _basketRepository = basketRepository;
+            _basketProductRepository = basketProductRepository;
             _productRepository = productRepository;
             _unitOfWork = unitOfWork;
             _cache = cache;
@@ -32,29 +32,29 @@ namespace supermarketapi.Services
 
         public async Task<IEnumerable<BasketProduct>> ListAsync()
         {
-            return await _basketRepository.ListAsync();
+            return await _basketProductRepository.ListAsync();
         }
 
         public async Task<IEnumerable<BasketProduct>> ListAsync(string clientUID)
         {
-            return await _basketRepository.ListAsync(clientUID);
+            return await _basketProductRepository.ListAsync(clientUID);
         }
 
         public async Task<bool> AddAsync(BasketProduct bProduct)
         {
             try
             {
-                var existingBasketProduct = await _basketRepository.FindByIdAsync(bProduct.Id);
+                var existingBasketProduct = await _basketProductRepository.FindByIdAsync(bProduct.Id);
 
                 if (existingBasketProduct == null)
                 {
                     bProduct.Quantity = 1;
-                    _basketRepository.Add(bProduct);
+                    _basketProductRepository.Add(bProduct);
                 }
                 else
                 {
                     existingBasketProduct.Quantity++;
-                    _basketRepository.Update(existingBasketProduct);
+                    _basketProductRepository.Update(existingBasketProduct);
                 }
                 
                 await _unitOfWork.CompleteAsync();
@@ -69,7 +69,7 @@ namespace supermarketapi.Services
 
         public async Task<bool> DecrementAsync(int bProductId)
         {
-            var existingBasketProduct = await _basketRepository.FindByIdAsync(bProductId);
+            var existingBasketProduct = await _basketProductRepository.FindByIdAsync(bProductId);
 
             if (existingBasketProduct == null)
                 return false;
@@ -79,12 +79,12 @@ namespace supermarketapi.Services
                 if (existingBasketProduct.Quantity == 1)
                 {
                     //removes item from list
-                    _basketRepository.Remove(existingBasketProduct);
+                    _basketProductRepository.Remove(existingBasketProduct);
                 }
                 else
                 {
                     existingBasketProduct.Quantity--;
-                    _basketRepository.Update(existingBasketProduct);
+                    _basketProductRepository.Update(existingBasketProduct);
                 }
 
                 await _unitOfWork.CompleteAsync();
@@ -100,14 +100,14 @@ namespace supermarketapi.Services
 
         public async Task<bool> Remove(int bProductId)
         {
-            var existingBasketProduct = await _basketRepository.FindByIdAsync(bProductId);
+            var existingBasketProduct = await _basketProductRepository.FindByIdAsync(bProductId);
 
             if (existingBasketProduct == null)
                 return false;
 
             try
             {
-                _basketRepository.Remove(existingBasketProduct);
+                _basketProductRepository.Remove(existingBasketProduct);
 
                 await _unitOfWork.CompleteAsync();
 
@@ -118,6 +118,24 @@ namespace supermarketapi.Services
                 // Do some logging stuff
                 return false;
             }
+        }
+
+        public async Task<bool> DeleteAllAsync(string clientUID)
+        {
+            try
+            {
+                _basketProductRepository.RemoveAll(clientUID);
+                await _unitOfWork.CompleteAsync();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                // Do some logging stuff
+                return false;
+            }
+
+
         }
     }
 }

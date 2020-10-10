@@ -5,6 +5,7 @@ using supermarketapi.Domain.Models;
 using supermarketapi.Domain.Repositories;
 using supermarketapi.Persistence.Contexts;
 using System.Linq;
+using System;
 
 namespace supermarketapi.Persistence.Repositories
 {
@@ -61,17 +62,23 @@ namespace supermarketapi.Persistence.Repositories
             _context.BasketProducts.Remove(bProduct);
         }
 
-        //public void Remove(Category basket)
-        //{
-        //    _context.BasketProduct.Remove(basket);
-        //}
+        public async Task<bool> RemoveAll(string clientUID)
+        {
+            try
+            {
+                var bProducts = await _context.BasketProducts.Where(p => p.ClientUID == clientUID).ToListAsync();
 
-        //public void RemoveAll()
-        //{
-        //    foreach (var basket in _context.Categories)
-        //    {
-        //        _context.BasketProduct.Remove(basket);
-        //    }
-        //}
+                foreach (var bProduct in bProducts)
+                {
+                    _context.BasketProducts.Remove(bProduct);
+                }
+                return true;
+            }
+
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
     }
 }

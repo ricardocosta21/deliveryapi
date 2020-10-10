@@ -22,6 +22,7 @@ namespace supermarketapi.Domain.Services
         Task<bool> Remove(int bProductId);
         //Task<bool> UpdateAsync(Category category, string newName);
         //Task<bool> DeleteAsync(int id);
-        //Task<bool> DeleteAllAsync();
+        Task<bool> DeleteAllAsync(string clientUID);
+
     }
 }

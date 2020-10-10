@@ -11,8 +11,6 @@ namespace supermarketapi.Domain.Repositories
     {
         Task<IEnumerable<BasketProduct>> ListAsync();
         Task<IEnumerable<BasketProduct>> ListAsync(string clientUID);
-        //Task<BasketProduct> ListAsync(int clientId);
-        //Task<BasketProduct> ListAsyncId(int id);
 
         void Add(BasketProduct bProduct);
         void Update(BasketProduct bProduct);
@@ -20,8 +18,6 @@ namespace supermarketapi.Domain.Repositories
 
         Task<BasketProduct> FindByIdAsync(int id);
 
-        //void Update(Category category);
-
-        //void RemoveAll();
+        Task<bool> RemoveAll(string clientUID);
     }
 }
