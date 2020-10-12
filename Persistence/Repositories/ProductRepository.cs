@@ -23,6 +23,7 @@ namespace supermarketapi.Persistence.Repositories
         {
             try
             {
+
                 IList<Product> products = await _context.Products.Where(x => x.ClientUID == clientUID).ToListAsync();
 
                 return (from Product product in products
