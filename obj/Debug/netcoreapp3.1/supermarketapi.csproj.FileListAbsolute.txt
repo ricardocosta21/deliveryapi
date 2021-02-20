@@ -1,8 +1,8 @@
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/ecs-task-def.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/mono_crash.175eeb7031.0.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/package.json
-/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/supermarketapi.deps.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/supermarketapi.runtimeconfig.json
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/supermarketapi.runtimeconfig.dev.json
@@ -65,7 +65,6 @@
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/System.Text.Json.dll
-/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/System.Xml.XPath.XmlDocument.dll
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so
 /Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so
@@ -84,13 +83,13 @@
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.csproj.CoreCompileInputs.cache
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.MvcApplicationPartsAssemblyInfo.cs
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.MvcApplicationPartsAssemblyInfo.cache
-/Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.RazorTargetAssemblyInfo.cache
-/Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.csproj.CopyComplete
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/staticwebassets/supermarketapi.StaticWebAssets.Manifest.cache
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/staticwebassets/supermarketapi.StaticWebAssets.xml
+/Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/scopedcss/bundle/supermarketapi.styles.css
+/Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.RazorTargetAssemblyInfo.cache
+/Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.csproj.CopyComplete
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.dll
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.xml
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.pdb
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.genruntimeconfig.cache
 /Users/ricardocosta/development/core/deliveryAPI/obj/Debug/netcoreapp3.1/supermarketapi.csprojAssemblyReference.cache
-/Users/ricardocosta/development/core/deliveryAPI/bin/Debug/netcoreapp3.1/ecs-task-def.json

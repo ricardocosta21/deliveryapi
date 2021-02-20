@@ -37,7 +37,6 @@ namespace supermarketapi.Controllers
         //}
 
         [HttpGet]
-        
         [ProducesResponseType(typeof(bool), 201)]
         [ProducesResponseType(typeof(ErrorResource), 400)]
         public async Task<IEnumerable<Product>> GetProductsListAsync(int categoryId, string clientUID)

@@ -23,7 +23,7 @@
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.20" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
     <PackageReference Include="Docker.DotNet" Version="3.125.2" />
-    <PackageReference Include="MySql.Data" Version="8.0.20" />
+    <PackageReference Include="MySql.Data" Version="8.0.23" />
     <PackageReference Include="MySql.Data.Entity" Version="6.10.9" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
@@ -31,6 +31,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.5" />
     <PackageReference Include="Stripe.net" Version="37.24.0" />
+    <PackageReference Include="MySqlConnector" Version="1.2.1" />
   </ItemGroup>
 
   <ItemGroup>

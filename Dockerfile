@@ -17,5 +17,9 @@ LABEL Maintainer="testingAPI"
 COPY --from=publish /app .
 EXPOSE 80/tcp
 
+
+#GCP
+#EXPOSE 8080/tcp
+
 #ENTRYPOINT ["dotnet", "supermarketapi.dll", "--server.urls", "https://*:80"]
 ENTRYPOINT ["dotnet", "supermarketapi.dll"]
