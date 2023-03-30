@@ -6,7 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish Docker
-      uses: elgohr/Publish-Docker-Github-Action@2.11
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         # The name of the image you would like to push
         name: ricardo21/supermarketapi:v1
